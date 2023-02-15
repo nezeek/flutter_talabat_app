@@ -12,6 +12,6 @@ class Nsceen extends StatefulWidget {
 class NsceenState extends State<Nsceen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(),);
+    return Scaffold(appBar: AppBar(title:Text("appbar")),);
   }
 }
