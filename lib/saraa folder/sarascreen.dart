@@ -1,16 +1,15 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
 
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
-}
+import 'package:flutter/material.dart';
 
-class _MyWidgetState extends State<MyWidget> {
+class Saraclas extends StatelessWidget {
+  const Saraclas({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold( 
+      appBar: AppBar(backgroundColor: Colors.grey,
+      title: Text("sara App bar"),),
+    );
   }
 }
