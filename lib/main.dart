@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
 
+import 'hawjeen/hawsc.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,8 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Saraclas(),
+      home: MySc(),
     );
   }
 }
-
