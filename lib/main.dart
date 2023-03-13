@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
 
 import 'hawjeen/hawsc.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MySc(),
+      home:Account(),
     );
   }
 }
