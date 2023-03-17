@@ -49,26 +49,4 @@ class Account extends StatelessWidget {
           leading: Icon(Icons.report_gmailerrorred),
           title: Text("About app"),
 
-        ),
-
-
-
-
-
-
-
-
-      ],
-
-    )
-    
-    
-    
-    
-    
-    
-    
-    
-    );
-  }
-}
+        ),],)  );}}
