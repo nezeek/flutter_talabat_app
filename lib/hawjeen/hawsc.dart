@@ -10,7 +10,7 @@ class MySc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Haw's Screen"),
-        backgroundColor: Color.fromARGB(255, 238, 167, 44),
+        backgroundColor: Color.fromARGB(255, 230, 156, 53),
       ),
     );
   }
