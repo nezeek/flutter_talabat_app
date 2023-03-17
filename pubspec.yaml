@@ -60,6 +60,7 @@ flutter:
   assets:
      - assets/2in1.jpeg
      - assets/88.jpg
+     - assets/im.jpg
      - assets/burgerbox.png
      - assets/burgerking.png
      - assets/ddk.jpeg

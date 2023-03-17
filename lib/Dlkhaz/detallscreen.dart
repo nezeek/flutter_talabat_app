@@ -18,7 +18,7 @@ height: 350,
 decoration: BoxDecoration(
   image: DecorationImage(
     fit: BoxFit.cover,
-    image: AssetImage(""))),
+    image: AssetImage("assets/im.jpg"))),
             ),
           )
         ],
