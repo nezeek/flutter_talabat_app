@@ -39,10 +39,11 @@ color: Color.fromARGB(255, 250, 244, 244),),
 child: Column(
 crossAxisAlignment: CrossAxisAlignment.start,
 children: [
-Positioned(
-  top: 100,
+
+Positioned(  top: 100,child: Text("Burger",style: TextStyle(fontSize: 20),))
+
   
-  child: Text("Burger",style: TextStyle(fontSize: 20),))
+  
 
 ],
 
