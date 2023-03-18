@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_talabat_app/Dlkhaz/detallscreen.dart';
 
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: Saraclas() ,
+      home: DetallScreen() ,
     );
   }
 }
