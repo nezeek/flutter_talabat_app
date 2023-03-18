@@ -1,16 +1,36 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+
+import 'package:flutter/material.dart';
+
+class Saraclas extends StatefulWidget {
+  const Saraclas({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<Saraclas> createState() => _SaraclasState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _SaraclasState extends State<Saraclas> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold( 
+      body:
+      CustomScrollView(
+        slivers: [
+          SliverAppBar( 
+            expandedHeight: 200,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Image.asset("assets/pizza.jpg",
+              fit: BoxFit.cover,),
+            ),
+            leading: CircleAvatar(
+            backgroundColor: Colors.white,
+              // child: SvgPicture.asset("assets/icons/backk.svg") ,
+            ),
+          )
+        ],
+      )
+      
+  
+    );
   }
 }

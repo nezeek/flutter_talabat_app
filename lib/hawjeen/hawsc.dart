@@ -1,16 +1,17 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class MySc extends StatelessWidget {
+  const MySc({super.key});
 
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
-}
-
-class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Haw's Screen"),
+        backgroundColor: Color.fromARGB(255, 230, 156, 53),
+      ),
+    );
   }
 }
