@@ -22,10 +22,19 @@ class _SaraclasState extends State<Saraclas> {
               background: Image.asset("assets/pizza.jpg",
               fit: BoxFit.cover,),
             ),
-            leading: CircleAvatar(
-            backgroundColor: Colors.white,
-              // child: SvgPicture.asset("assets/icons/backk.svg") ,
+            leading: Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: CircleAvatar(
+              backgroundColor: Colors.white,
+                //child: SvgPicture.asset("assets/icons/backk.svg") ,
+              ),
             ),
+            actions: [
+              CircleAvatar(
+              backgroundColor: Colors.white,
+                //child: SvgPicture.asset("assets/icons/backk.svg") ,
+              ),
+            ],
           )
         ],
       )
