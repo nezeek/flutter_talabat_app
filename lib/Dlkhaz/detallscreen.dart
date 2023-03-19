@@ -36,25 +36,34 @@ Positioned(
 padding: EdgeInsets.only(right: 0,left: 12,top: 0,bottom: 800),
 decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
 color: Color.fromARGB(255, 250, 244, 244),),
-child: Column(
+
+child: Row(
 crossAxisAlignment: CrossAxisAlignment.start,
 children: [
+  Text("burrrgeeerrrr",style: Theme.of(context).textTheme.headlineLarge,),
+  Positioned(
+    top: 59,
+    left: 0,
+    right: 400,
+    child:
+    Padding( 
+  padding:  EdgeInsets.only(right: 400,left: 0,top: 50,bottom: 0),
 
-//Positioned(  top: 100,child: Text("Burger",style: TextStyle(fontSize: 20),))
-
-  
-  
-
-],
-
-
-
+child: Text("as de har mrm hata ava cidbet",style: TextStyle(height: 3),),
 
 ),
+    
+  )
 
-))
 
-        ],
+
+
+
+//Positioned(  top: 100,child: Text("Burger",style: TextStyle(fontSize: 20,),))
+],
+),
+
+))],
       ),
 
     );}
