@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
-import 'package:flutter_talabat_app/Dlkhaz/detallscreen.dart';
+
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
 
 
