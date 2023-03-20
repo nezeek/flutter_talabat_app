@@ -32,7 +32,7 @@ class homescreen extends StatelessWidget {
       child:SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 50,),
+            SizedBox(height: 45,),
             Padding(padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,9 +40,9 @@ class homescreen extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Deliver to",
+                    Text("Delivering to",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 15,
                       color: Colors.black54,
                     ),
                     ),
@@ -78,68 +78,7 @@ class homescreen extends StatelessWidget {
 
 
 
-          //  SizedBox(
-          //   height: 120,
-          //   child: ListView.builder(
-          //     scrollDirection: Axis.horizontal,
-          //     shrinkWrap: true,
-          //     itemCount: foods.length,
-          //     itemBuilder: (context,index){
-          //       return Container(
-          //         width: 100,
-          //         margin: EdgeInsets.only(left:15),
-          //         padding: EdgeInsets.symmetric(vertical: 20),
-          //         decoration: BoxDecoration(
-          //             //color: bgColors[index],
-          //           color: Color(0xFFD4EEF3),
-          //           borderRadius: BorderRadius.circular(10),
-          //           boxShadow: [
-          //              BoxShadow(
-          //               color: Colors.grey.withOpacity(0.5),
-          //               spreadRadius: 3, blurRadius: 2, offset: Offset(0, 3)
-          //             ),
-          //           ]
-          //         ),
-          //         child: Column(
-          //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //           children: [
-          //           Image.asset("images/${foods[index]}.png",
-          //           height: 80,
-          //           width: 80,
-          //           ),
-          //           Text(foods[index],
-          //           style: TextStyle(
-          //             fontWeight: FontWeight.w500,
-          //             fontSize: 16,
-          //             color: Colors.black87
-          //           ),
-          //           ),
-          //         ],),
-          //       );
-          //     }
-          //   ),
-          //  ),
-          //  Padding(
-          //   padding: EdgeInsets.symmetric(horizontal:15,vertical: 5 ),
-          //  child: Row(
-          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //   children: [
-              
-          //     Text(
-          //       "All Restaurants",
-          //       style: TextStyle(
-          //         fontSize: 22,
-          //         fontWeight: FontWeight.w500,
-          //       ),
-          //     ),
-          //     TextButton(onPressed: (){}, child: Icon(Icons.list,
-          //       color: Color(0xFFFF2F08),
-                
-          //     ),),
-
-          //   ],
-          //  ),
-          //  ),
+         
           ] 
             ),
             
