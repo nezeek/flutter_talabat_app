@@ -110,8 +110,61 @@ class homescreen extends StatelessWidget {
             ),
            ),
 
-          
-            
+
+           //Third Row
+           Padding(
+            padding: EdgeInsets.symmetric(horizontal:15,vertical: 5 ),
+           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "All Restaurants",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                ),),
+
+              Container(
+              margin: EdgeInsets.all(13),
+              width: 75,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color:Color(0xFFFAE6D5),
+                
+                boxShadow: [
+                    BoxShadow(
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 1,
+                 ),]
+              ),
+              child:Stack(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                Container(
+                  height: 30,
+                  width: 35,
+                  decoration: BoxDecoration(   
+                  borderRadius: BorderRadius.only(   
+                  bottomLeft: Radius.circular(15),topLeft: Radius.circular(15),
+                  ),
+                  color: Colors.white,),
+                  child:Icon(Icons.crop_7_5,
+                  color: Colors.black45,),
+                ),
+                Container(
+                  padding: EdgeInsets.only(right: 5,left: 5),
+                  margin: EdgeInsets.all(3),
+                  child: Icon(Icons.list,
+                  color: Color(0xFFFF2F08),),
+                ),
+                  ],),
+              ],),
+            ),
+
+            ],),
+           ),
            
 
 
