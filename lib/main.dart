@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
-import 'package:flutter_talabat_app/Dlkhaz/Dscreen1.dart';
-import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/hawjeen/mm.dart';
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
@@ -31,7 +28,6 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-<<<<<<< HEAD
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.orange,
@@ -76,15 +72,5 @@ class _MyAppState extends State<MyApp> {
                     label: 'account',
                   ),
                 ])));
-=======
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-
-      home: Saraclas(),
-
-    );
->>>>>>> d1a8abd6ea3b41d369d0fe5129b57b24e9e40200
   }
 }
