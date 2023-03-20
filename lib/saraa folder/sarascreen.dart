@@ -8,7 +8,7 @@ class Saraclas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body:
-      Material( child: Stack(
+      Stack(
       children: [
        Positioned(height: 130,width: 500, child: Image.asset("assets/pizza.jpg",
               fit: BoxFit.cover,)),
@@ -32,7 +32,8 @@ class Saraclas extends StatelessWidget {
       ],
       
       ),
-      ),
+      
+      
     );
   }
 }
