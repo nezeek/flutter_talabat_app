@@ -19,20 +19,20 @@ body: Column(
   children: [
 
     Positioned(
-  top: 100,
+  top: 150,
 child: Image.asset("assets/im.jpg")
 
 ),
 Container(
-margin: EdgeInsets.only(top: 80,),
-padding: EdgeInsets.only(top:30,
+margin: EdgeInsets.only(top: 10,),
+padding: EdgeInsets.only(top:10,
 left: 10,
 
 ),
-height: 440,
-decoration: BoxDecoration(color: Color.fromARGB(244, 250, 244, 255),
-borderRadius: BorderRadius.only(topLeft: Radius.circular(25),
-topRight: Radius.circular(25),
+height: 150,
+decoration: BoxDecoration(color: Color.fromARGB(244, 248, 243, 248),
+borderRadius: BorderRadius.only(topLeft: Radius.circular(5),
+topRight: Radius.circular(5),
 ),
 ),
 child: Column(children: <Widget>[
@@ -65,13 +65,14 @@ SizedBox(
 child:OutlinedButton(
   onPressed: (){
   }, 
-  child: Icon(Icons.remove,size: 20,color: Colors.orange,)),
+  child: Icon(Icons.remove,size: 20,color: Colors.deepOrange,)),
 
 ),
 
 Row(
   children: <Widget>[
-    Text("01",style: TextStyle(fontSize: 20),)
+    Text("01",style: TextStyle(fontSize: 20),),
+   
   ],
 ),
 Row(
@@ -79,18 +80,49 @@ Row(
   SizedBox(width: 55,height: 40,
   child:OutlinedButton(
   onPressed: (){}, 
-  child: Icon(Icons.add,size: 20,color: Colors.orange,)),),
+  child: Icon(Icons.add,size: 20,color: Colors.deepOrange,)),),
   
 ],),
 
 ],),
 
 
+],),
+
+      ],
+    ),
+
+    ],)
+
+  ],
+),
+
+],
+
+),
+
+]
+,),
+),
+Container(
+margin: EdgeInsets.only(top: 10,),
+padding: EdgeInsets.only(top:10,
+left: 10,),
+height: 100,
+decoration: BoxDecoration(color: Color.fromARGB(244, 248, 243, 248),
+borderRadius: BorderRadius.only(topLeft: Radius.circular(5),
+topRight: Radius.circular(5),
+),
+),
+child: Column(children: <Widget>[
+
+
 Row(children:<Widget> [
 Icon(Icons.chat_bubble_outline),
 Row(children: <Widget>[
  Text("Any special request ?",style: TextStyle(fontSize: 20),),
- Text("                         Add note",style: TextStyle(fontSize: 15,color: Colors.orange),)
+ Text("                         Add note",
+ style: TextStyle(fontSize: 15,color: Colors.deepOrange),)
 ],
 
 ),
@@ -99,42 +131,23 @@ Row(children: <Widget>[
 
 SizedBox(
 height: 55,
-width: 300,
+width: 370,
 child: FloatingActionButton(
-  
-  backgroundColor: Colors.orange,
-  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18),),
+  backgroundColor: Colors.deepOrange,
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),),
   onPressed: (){},
-child: Text("data".toString(),
-style:TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.white),),
-
-
-),
+child: Text("  Add to basket                    12,000 IQD",
+style:TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.white),
 
 ),
+),
+ 
+  
+),
+
+
+
 ],),
-
-      ],
-    ),
-
-    ],)
-
-
-
-
-
-  ],
-),
-
-
-
-
-],
-
-)
-
-]
-,),
 ),
   ],
 ),
