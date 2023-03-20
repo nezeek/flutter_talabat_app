@@ -8,25 +8,10 @@ class MySc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 245, 247, 119),
-        elevation: 0,
-        title: Center(
-          child: Column(
-            children: [
-              Text(
-                "Delivering to",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w300),
-              ),
-              Text(
-                "Home,Duhok street",
-                style: TextStyle(color: Colors.black),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
+        body: Container(
+      height: 50,
+      width: 350,
+      color: Colors.amber,
+    ));
   }
 }
