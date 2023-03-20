@@ -1,22 +1,48 @@
 
 import 'package:flutter/material.dart';
 
-class Saraclas extends StatefulWidget {
+class Saraclas extends StatelessWidget {
   const Saraclas({super.key});
 
   @override
-  State<Saraclas> createState() => _SaraclasState();
-}
-
-class _SaraclasState extends State<Saraclas> {
-  @override
   Widget build(BuildContext context) {
-    return Scaffold( 
+    return Scaffold(
+      body: Stack(
+      children: [
+       Positioned(height: 130,width: 500, child: Image.asset("assets/pizza.jpg",
+              fit: BoxFit.cover,)),
+     Positioned(top: 20, right: 80, child: 
+     CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Icon(Icons.share,color: Colors.black,) ,
+              ),),
+
+     Positioned(top: 20, left: 5, child:
+      CircleAvatar(
+              backgroundColor: Colors.white,
+                child: Icon(Icons.arrow_back,color: Colors.black,) ,
+              )),
+        Positioned(top: 20, right: 25, child:
+      CircleAvatar(
+              backgroundColor: Colors.white,
+                child: Icon(Icons.search,color: Colors.black,) ,
+              )),
+              
+      ],
+      
+      ),
+      
+    );
+  }
+}
+    
+    
+    /* Scaffold( 
       body:
       CustomScrollView(
         slivers: [
           SliverAppBar( 
-            expandedHeight: 200,
+            expandedHeight: 130,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset("assets/pizza.jpg",
               fit: BoxFit.cover,),
@@ -41,11 +67,22 @@ class _SaraclasState extends State<Saraclas> {
                 ),
               ),
             ],
-          )
+          ),
         ],
       )
-      
+
   
     );
   }
-}
+}*/
+/*
+          Stack(
+            children: [
+      
+    Positioned(top: 10, left: 5, child: Text("Torino Pizza",
+    style: TextStyle(color: Colors.black),)),
+    Positioned(bottom: 10, left: 5, child: Text("Pizza,Snadwich,Italian")),
+ 
+
+            ],
+          )*/
