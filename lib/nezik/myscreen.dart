@@ -23,6 +23,12 @@ class homescreen extends StatelessWidget {
     Color(0xFFD4EEF3),
     Color(0xFFFAE6D5),
     Color(0xFFEFCFE7),
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
+    Color(0xFFFAE6D5),
+    Color(0xFFEFCFE7),
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
   ];
  
   List suggestion=[
@@ -92,8 +98,8 @@ class homescreen extends StatelessWidget {
                   margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
                   padding: EdgeInsets.only(top:5,bottom: 5),
                   decoration: BoxDecoration(
-                    //color: bgColors[index],
-                    color: Color(0xFFD4EEF3),
+                    color: bgColors[index],
+                    //color: Color(0xFFD4EEF3),
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                        BoxShadow(
