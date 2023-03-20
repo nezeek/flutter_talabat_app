@@ -1,5 +1,4 @@
 
-
 import 'package:flutter/material.dart';
 
 class Saraclas extends StatefulWidget {
@@ -26,13 +25,20 @@ class _SaraclasState extends State<Saraclas> {
               padding: const EdgeInsets.only(left: 16),
               child: CircleAvatar(
               backgroundColor: Colors.white,
-                //child: SvgPicture.asset("assets/icons/backk.svg") ,
+                child: Icon(Icons.arrow_back,color: Colors.black,) ,
               ),
             ),
             actions: [
               CircleAvatar(
               backgroundColor: Colors.white,
-              //  //child: SvgPicture.asset("assets/icons/backk.svg") ,
+              child: Icon(Icons.share,color: Colors.black,) ,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Icon(Icons.search,color: Colors.black,) ,
+                ),
               ),
             ],
           )
