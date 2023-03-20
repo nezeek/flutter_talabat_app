@@ -6,16 +6,16 @@ import 'package:flutter_talabat_app/nezik/data.dart';
 class homescreen extends StatelessWidget {
   // const homepage({super.key});
   List foods=[
-    "best-choice",
-    "coffee",
-    "burger",
+    "More For Less",
+    "top choice",
+    "BOGO",
+    "coffee lovers",
     "delivery",
-    "dessert",
+    "Available Now",
+    "desserts",
     "exclusive",
-    "now-available",
     "Pizza Lovers",
-    "Pizza",
-    "Pizza",
+    "Burger Lovers",
   ];
 
   List<Color>bgColors=[
