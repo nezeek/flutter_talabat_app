@@ -24,6 +24,14 @@ class homescreen extends StatelessWidget {
     Color(0xFFEFCFE7),
   ];
  
+  List suggestion=[
+    "Sort by",
+    "Cuisines",
+    "Rating 4.0+",
+    "Free Delivery",
+    "Under 30 mins", 
+    "Newly Added",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -166,6 +174,36 @@ class homescreen extends StatelessWidget {
             ],),
            ),
            
+
+          //Fourth Row
+            SizedBox(
+            height: 40,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              shrinkWrap: true,
+              itemCount: suggestion.length,
+              itemBuilder: (context,index){
+                return Container(
+                  width: 140,
+                  height: 35,
+                  margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: Colors.black26),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(suggestion[index],
+                      style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black87
+                      ),),
+                    ]),
+                );
+  
+              },),),
 
 
 
