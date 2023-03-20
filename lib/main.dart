@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/hawjeen/mm.dart';
+import 'package:flutter_talabat_app/manal/msScreen.dart';
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
 
-import 'Dlkhaz/account.dart';
-import 'manal/msScreen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   int myIndex = 0;
   List<Widget> widgetList = const [
     MySc(),
-    search(),
+   search(),
     Account(),
   ];
   @override
