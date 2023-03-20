@@ -28,16 +28,7 @@ class Saraclas extends StatelessWidget {
               backgroundColor: Colors.white,
                 child: Icon(Icons.search,color: Colors.black,) ,
               )),
-              Column(
-                children: [
-                Row(children: [
-                  Text("Torino")
-                ],),
-                Row(children: [
-                  Text("Torino")
-                ],),
-                ],
-              )
+              
       ],),
       
       
