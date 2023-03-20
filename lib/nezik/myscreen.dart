@@ -63,14 +63,52 @@ class homescreen extends StatelessWidget {
                     Container(
                       height: 50,
                       width: 50,
-                     child: Icon(Icons.search,color: Colors.black,),
-                      
-                    ),
-                  ],
-                ),
-              ],
+                     child: Icon(Icons.search,color: Colors.black,), ),
+                  ],),
+              ],),
             ),
+
+
+            //Second Row
+           SizedBox(
+            height: 140,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              shrinkWrap: true,
+              itemCount: foods.length,
+              itemBuilder: (context,index){
+                return Container(
+                  width: 110,
+                  height: 220,
+                  margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
+                  padding: EdgeInsets.only(top:5,bottom: 5),
+                  decoration: BoxDecoration(
+                    //color: bgColors[index],
+                    color: Color(0xFFD4EEF3),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                       BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2, blurRadius: 1, offset: Offset(0, 3)
+                      ),
+                    ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                    Image.asset("images/${foods[index]}.png",
+                    height: 80,
+                    width: 80,),
+                    Text(foods[index],
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 16,
+                      color: Colors.black87
+                    ),),
+                  ],),
+                );
+              }
             ),
+           ),
 
           
             
@@ -79,11 +117,9 @@ class homescreen extends StatelessWidget {
 
 
          
-          ] 
-            ),
+          ]),
             
             ),
-        
       );
   }
 }
