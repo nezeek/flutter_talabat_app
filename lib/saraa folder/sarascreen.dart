@@ -29,9 +29,7 @@ class Saraclas extends StatelessWidget {
                 child: Icon(Icons.search,color: Colors.black,) ,
               )),
               
-      ],
-      
-      ),
+      ],),
       
       
     );
