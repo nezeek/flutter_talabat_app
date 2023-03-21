@@ -16,7 +16,8 @@ class Account extends StatelessWidget {
     IconButton(onPressed: (){}, icon: Icon(Icons.settings))],
     backgroundColor: Colors.white,
     foregroundColor: Colors.black,),
-    body: ListView(
+    body:
+    ListView(
       children: [
         ListTile(
           leading: Icon(Icons.description,color: Colors.black,),
@@ -41,5 +42,10 @@ class Account extends StatelessWidget {
            ListTile(
           leading: Icon(Icons.report_gmailerrorred,color: Colors.black,),
           title: Text("About app"),
- ), ],) ,
+ ), 
+
+ ],
+ 
+ ) ,
+ 
          );} }

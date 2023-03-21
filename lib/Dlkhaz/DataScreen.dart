@@ -45,6 +45,7 @@ Column(
   color: Colors.black,
     ),
     ),
+    Text("Av burgarra galak ya xusha cbu naheta gutn tama we raw3aya tueke bxuye de kaya2",style: TextStyle(fontSize: 10),),
     Column(children: <Widget>[
     Row(
       children: <Widget>[
