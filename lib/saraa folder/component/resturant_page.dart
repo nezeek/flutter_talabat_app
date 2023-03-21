@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/saraa%20folder/component/resturant_info.dart';
 
-import 'component/resturant_appbar.dart';
+import 'resturant_appbar.dart';
 
 
 class ResturantPage extends StatefulWidget {
