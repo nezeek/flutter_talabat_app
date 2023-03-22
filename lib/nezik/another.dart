@@ -225,37 +225,194 @@ class profilescreen extends StatelessWidget {
               },),),
 
 
+            //vertical scroll
             SizedBox(
               child: ListView.builder(
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
               itemCount: logolist.length,  
               itemBuilder: (BuildContext context, int index) {
-                return Stack(
-                  children: [
-                    Container(
-                  height: 160,
-                  margin: EdgeInsets.only(left:10,right: 10,bottom:10,top: 5 ),
-                  padding: EdgeInsets.only(top:5,bottom: 5),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-        borderRadius: BorderRadiusDirectional.circular(16),
-        boxShadow: [
+                return Padding(
+                  padding: const EdgeInsets.all(3.0),
+                  child: Container(
+        clipBehavior: Clip.hardEdge,
+        width: 350,
+        height: 200,
+        margin: EdgeInsets.only(left:10,right: 10,bottom:6,top: 5 ),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
+        border: Border.all(color: Colors.black38)
+        ),
+        child: Stack(
+          children: [
+
+             Container(
+            color: Color(0xFFFAE6D5),
+            ),
+           
+            //time and price
+            Positioned(
+              top: 15,
+              left: 15,
+              child: Container(
+                height: 27,
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
+                boxShadow: [
                        BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
                         spreadRadius: 3, blurRadius: 2, offset: Offset(0, 3),
                       ),],
-                    //border:Border.all(color: Colors.black54)
-                    ),
-                    child:Positioned(
-                      bottom: 0,
-                      child: Container(
-                        color: Colors.black38,
-                      ),   
-                    ),   
+                color: Colors.white
+                ),
+                         child:Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                           Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(Icons.access_time,size:15),
+                            ],),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text('\t\t\t${logolist[index].time}\t\t\t')
+                            ],),
+                         ],),
+              ),
+            ),
+            Positioned(
+              top: 15,
+              left: 120,
+              child: Container(
+                height: 27,
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(8),
+                boxShadow: [
+                       BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 3, blurRadius: 2, offset: Offset(0, 3),
+                      ),],
+                color: Colors.white
+                ),
+                         child:Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                           Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Icon(Icons.delivery_dining,size:15),
+                            ],),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text('\t\t\t${logolist[index].price}\t\t\t')
+                            ],),
+                         ],),
+              ),
+            ),
+
+              //images
+               Positioned(
+                top: 62,
+                right: 30,
+                 child: Column(children: [
+                 Positioned(
+                             top: 80,
+                             right: 50,
+                             child: Container(
+                  width: 70,
+                  height: 70,
+                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
+                   border: Border.all(color: Color.fromARGB(66, 75, 73, 73)),
+                   image:DecorationImage(image:AssetImage(logolist[index].imageurl,),),
+                              ), ),
+                           ),],),
+               ),
+
+            
+            Positioned(
+              bottom: 0,
+              child: Container(
+                width: 390,
+                height: 70,
+                color: Colors.white
+              ),
+            ),
+             Positioned(
+              bottom: 25,
+              left: 10,
+              child: Text(
+                logolist[index].title,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Positioned(
+              bottom: 3,
+              left: 10,
+              child: Text(
+                logolist[index].description,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 10,
+              right: 10,
+              child: Row(
+                children: [
+                  Container(
+                    child:Icon(Icons.star,size:17 ,
+                      color: Colors.amber,),
+                  ),
+                  Container(
+                   child: Text(
+                logolist[index].top,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold),
+              ),
+                  ),
+                ],),),
+
+          ]),),);
+                },),),
+
+        //     SizedBox(
+        //       child: ListView.builder(
+        //         shrinkWrap: true,
+        //         physics: NeverScrollableScrollPhysics(),
+        //       itemCount: logolist.length,  
+        //       itemBuilder: (BuildContext context, int index) {
+        //         return Stack(
+        //           children: [
+        //             Container(
+        //           height: 160,
+        //           margin: EdgeInsets.only(left:10,right: 10,bottom:10,top: 5 ),
+        //           padding: EdgeInsets.only(top:5,bottom: 5),
+        //           decoration: BoxDecoration(
+        //             color: Colors.white,
+        // borderRadius: BorderRadiusDirectional.circular(16),
+        // boxShadow: [
+        //                BoxShadow(
+        //                 color: Colors.grey.withOpacity(0.5),
+        //                 spreadRadius: 3, blurRadius: 2, offset: Offset(0, 3),
+        //               ),],
+        //             //border:Border.all(color: Colors.black54)
+        //             ),
+        //             child:Positioned(
+        //               bottom: 0,
+        //               child: Container(
+        //                 color: Colors.black38,
+        //               ),   
+        //             ),   
                     
-               ), ],);
-              })),
+        //        ), ],);
+        //       })),
 
           ]),
             
