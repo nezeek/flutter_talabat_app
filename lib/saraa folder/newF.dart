@@ -13,29 +13,39 @@ class Newf extends StatelessWidget {
          scrollDirection: Axis.vertical,
          shrinkWrap: true,
          children: [
-          Stack(
-       children: [
-        Positioned(height: 130,width: 300, child: Image.asset("assets/pizza.jpg",
+        
+         ],
+      )
+    );
+  }
+}
+
+
+ Stack(
+               children: [
+                Positioned(height: 130,width: 300, child: Image.asset("assets/pizza.jpg",
                fit: BoxFit.cover,)),
-      Positioned(top: 20, right: 80, child: 
-      CircleAvatar(
+              Positioned(top: 20, right: 80, child: 
+              CircleAvatar(
                backgroundColor: Colors.white,
                child: Icon(Icons.share,color: Colors.black,) ,
                ),),
-
-      Positioned(top: 20, left: 5, child:
-       CircleAvatar(
+              Positioned(top: 20, left: 5, child:
+               CircleAvatar(
                backgroundColor: Colors.white,
                  child: Icon(Icons.arrow_back,color: Colors.black,) ,
                )),
-         Positioned(top: 20, right: 25, child:
-       CircleAvatar(
+                 Positioned(top: 20, right: 25, child:
+               CircleAvatar(
                backgroundColor: Colors.white,
                  child: Icon(Icons.search,color: Colors.black,) ,
                )
                ),
-       ]
-       ),
+               ]
+               ),
+
+
+
 
  Stack(
         children: [
@@ -51,9 +61,4 @@ class Newf extends StatelessWidget {
         ],
      
     ),
-         ],
-      )
-    );
-  }
-}*/
-
+    */
