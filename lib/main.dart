@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // home: ResturantInfo() ,
-      home: ResturantPage(),
+      home: homescreen(),
 
     );
   }
