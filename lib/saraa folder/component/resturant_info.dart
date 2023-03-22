@@ -12,20 +12,21 @@ class ResturantInfo extends StatefulWidget {
 class _ResturantInfoState extends State<ResturantInfo> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
+    return Scaffold(body:
+  Stack(
         children: [
+          
           Positioned(top: 4,left: 20,child:Text("Torino Pizza",
-          style: TextStyle(fontWeight: FontWeight.w600,fontSize: 24),)),
-
+          style: TextStyle(fontSize: 20),)),
+      
            Positioned(top: 35,left: 20,child:Text("Pizza,Sandwich,Italian",
-          style: TextStyle(fontWeight: FontWeight.w400,fontSize: 20,color: Colors.black38,
+          style: TextStyle(fontSize: 16,color: Colors.black38,
       ),)),
-
+      
           Positioned(top: 25, right: 20,child:Text("Info",
-          style: TextStyle(fontWeight: FontWeight.w400,fontSize: 20,color: Colors.red),)),
+         style: TextStyle(fontSize: 18,color: Colors.red),)),
         ],
-      ),
-    );
+     
+    ));
   }
 }
