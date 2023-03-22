@@ -224,125 +224,39 @@ class profilescreen extends StatelessWidget {
   
               },),),
 
-            
-              //vertical scroll
-    //           SizedBox(
-    //             child: ListView.builder(
-    //             shrinkWrap: true,
-    //             physics: NeverScrollableScrollPhysics(),
-    //     itemCount: logolist.length,
-    //     itemBuilder: (BuildContext context,int index){
-    //     return Container(
-    //     height: 110,
-    //     decoration: BoxDecoration(
-    //     color: Colors.white,
-    //     borderRadius: BorderRadiusDirectional.circular(16),
-    //     boxShadow: [
-    //                    BoxShadow(
-    //                     color: Colors.grey.withOpacity(0.5),
-    //                     spreadRadius: 3, blurRadius: 2, offset: Offset(0, 3),
-    //                   ),
-    //                 ]),
-    //   child: Row(
-    //     children: [
-    //       Container(
-    //         decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),
-    //         boxShadow: [
-    //               BoxShadow(
-    //                   color: Color.fromARGB(255, 253, 253, 253).withOpacity(0.5),
-    //                   spreadRadius: 1,  
-    //                   ),],
-    //         image:DecorationImage(image:AssetImage(logolist[index].imageurl,),
-    //         ),),
-    //         padding: EdgeInsets.all(12),
-    //         margin: EdgeInsets.only(left: 8,right: 5),
-    //         width: 90,
-    //         height: 90,
-    //       ),
-    //       Expanded(
-    //       child:Container(
-    //           padding: EdgeInsets.only(
-    //             top: 20,
-    //             left: 10,
-    //             right: 10,
-    //           ),
-    //           child: Column(
-    //             crossAxisAlignment: CrossAxisAlignment.start,
-    //             children: [
-    //               Row(
-    //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //                   children: [
-    //                     Text(logolist[index].title,
-    //                     style: TextStyle(
-    //                       fontSize: 17,
-    //                       fontWeight: FontWeight.bold,
-    //                       height: 1.5,
-    //                     ),
-    //                     ),
-    //                   ],
-    //               ),
-    //               Row(
-    //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //                   children: [
-    //                     Text(logolist[index].description,
-    //                     style: TextStyle(
-    //                       fontSize: 14,
-    //                       height: 1.2,
-    //                     ),),
-    //                   ],
-    //               ),
-    //                Row(
-    //                 mainAxisAlignment: MainAxisAlignment.start,
-    //                   children: [
-    //                     Icon(Icons.star,size:17 ,
-    //                     color: Colors.amber,
-    //                     ),
-    //                     Text(logolist[index].top,
-    //                       style: TextStyle(
-    //                       fontSize: 12,
-    //                       height: 1.2,
-    //                     ),),
-    //                   ],
-    //               ),
-    //                Row(
-    //                 mainAxisAlignment: MainAxisAlignment.start,
-    //                   children: [
-    //                      Column(
-    //                       crossAxisAlignment: CrossAxisAlignment.start,
-    //                       children: [
-    //                         Icon(Icons.access_time,size:15),
-    //                         ],),
-    //                     Column(
-    //                       crossAxisAlignment: CrossAxisAlignment.start,
-    //                       children: [
-    //                         Text('\t${logolist[index].time}\t\t\t\t\t\t\t')
-    //                         ],),
-    //                         Column(
-    //                       children: [
-    //                         Icon(Icons.delivery_dining,size:15),
-    //                         ],),
-    //                     Column(
-    //                       children: [
-    //                         Text(logolist[index].price,
-    //                         style: TextStyle(
-    //                         fontSize: 14,
-    //                         height: 1.2,
-    //                         ),),
-    //                         ],),
-    //                   ],),
-    //             ],),
-    //       ), 
-    //       ),
-    //     ],),
-    // );
-    //     },
-        
-    //   ),
-    //           ),
 
+            SizedBox(
+              child: ListView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+              itemCount: logolist.length,  
+              itemBuilder: (BuildContext context, int index) {
+                return Stack(
+                  children: [
+                    Container(
+                  height: 160,
+                  margin: EdgeInsets.only(left:10,right: 10,bottom:10,top: 5 ),
+                  padding: EdgeInsets.only(top:5,bottom: 5),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+        borderRadius: BorderRadiusDirectional.circular(16),
+        boxShadow: [
+                       BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 3, blurRadius: 2, offset: Offset(0, 3),
+                      ),],
+                    //border:Border.all(color: Colors.black54)
+                    ),
+                    child:Positioned(
+                      bottom: 0,
+                      child: Container(
+                        color: Colors.black38,
+                      ),   
+                    ),   
+                    
+               ), ],);
+              })),
 
-
-           
           ]),
             
             ),
