@@ -18,7 +18,7 @@ class _ResturantPageState extends State<ResturantPage> {
       body:
       CustomScrollView(
         slivers: [
-          RestaruntAppBar(),
+         // RestaruntAppBar(),
           SliverToBoxAdapter(
             child: ResturantInfo()
           ),

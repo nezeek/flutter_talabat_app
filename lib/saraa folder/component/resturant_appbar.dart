@@ -1,10 +1,11 @@
+/*
 import 'package:flutter/material.dart';
 
 class RestaruntAppBar extends StatelessWidget {
   const RestaruntAppBar({
     super.key,
   });
-  
+
   @override
   Widget build(BuildContext context) {
     return SliverAppBar( 
@@ -35,4 +36,4 @@ class RestaruntAppBar extends StatelessWidget {
       ],
     );
   }
-}
+}*/
