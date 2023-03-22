@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -53,12 +54,12 @@ class homescreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [  
                Row(children: [
-                 Column(
-                  children: [
-                  Icon(Icons.arrow_back),
-                ],),
+                IconButton(onPressed: (){
+                  Navigator.pop(context);}, 
+                icon:Icon( Icons.arrow_back),
+                ),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Delivering to",
                     style: TextStyle(
