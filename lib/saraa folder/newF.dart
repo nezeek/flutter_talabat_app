@@ -9,32 +9,35 @@ class Newf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-      ListView(children: [
- Stack(
-      children: [
-       Positioned(height: 130,width: 500, child: Image.asset("assets/pizza.jpg",
-              fit: BoxFit.cover,)),
-     Positioned(top: 20, right: 80, child: 
-     CircleAvatar(
-              backgroundColor: Colors.white,
-              child: Icon(Icons.share,color: Colors.black,) ,
-              ),),
+      body:ListView(
+         scrollDirection: Axis.vertical,
+         shrinkWrap: true,
+         children: [
+          Stack(
+       children: [
+        Positioned(height: 130,width: 300, child: Image.asset("assets/pizza.jpg",
+               fit: BoxFit.cover,)),
+      Positioned(top: 20, right: 80, child: 
+      CircleAvatar(
+               backgroundColor: Colors.white,
+               child: Icon(Icons.share,color: Colors.black,) ,
+               ),),
 
-     Positioned(top: 20, left: 5, child:
-      CircleAvatar(
-              backgroundColor: Colors.white,
-                child: Icon(Icons.arrow_back,color: Colors.black,) ,
-              )),
-        Positioned(top: 20, right: 25, child:
-      CircleAvatar(
-              backgroundColor: Colors.white,
-                child: Icon(Icons.search,color: Colors.black,) ,
-              )
-              ),
-      ]
-      ),
-   Stack(
+      Positioned(top: 20, left: 5, child:
+       CircleAvatar(
+               backgroundColor: Colors.white,
+                 child: Icon(Icons.arrow_back,color: Colors.black,) ,
+               )),
+         Positioned(top: 20, right: 25, child:
+       CircleAvatar(
+               backgroundColor: Colors.white,
+                 child: Icon(Icons.search,color: Colors.black,) ,
+               )
+               ),
+       ]
+       ),
+
+ Stack(
         children: [
           Positioned(top: 4,left: 20,child:Text("Torino Pizza",
           style: TextStyle(fontSize: 20),)),
@@ -48,9 +51,9 @@ class Newf extends StatelessWidget {
         ],
      
     ),
-
-      ],)
+         ],
+      )
     );
   }
-} 
-*/
+}*/
+
