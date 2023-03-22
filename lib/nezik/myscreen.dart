@@ -51,11 +51,15 @@ class homescreen extends StatelessWidget {
             Padding(padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              children: [  
+               Row(children: [
+                 Column(
                   children: [
-                    Icon(icon),
+                  Icon(Icons.arrow_back),
+                ],),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
                     Text("Delivering to",
                     style: TextStyle(
                       fontSize: 15,
@@ -63,17 +67,17 @@ class homescreen extends StatelessWidget {
                     ),
                     ),
                     SizedBox(height: 5),
-                    Row(children: [
+                    Row(
+                      children: [
                       //Icon(Icons.location_on,color: Color(0xFFFF2F08),),
                       Text("Duhok/Iraq",
                       style: TextStyle(
                         fontSize: 20,fontWeight: FontWeight.bold,
                       ),),
                       
-                      
                     ],)
-                  ],
-                ),
+                  ],),
+               ],),
                 Stack(
                   children: [
                     Container(
