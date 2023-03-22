@@ -31,6 +31,13 @@ class profilescreen extends StatelessWidget {
     Color(0xFFEFCFE7),
     Color(0xFFFBDCDA),
     Color(0xFFD4EEF3),
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
+    Color(0xFFFAE6D5),
+    Color(0xFFEFCFE7),
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
+    Color(0xFFFAE6D5),
   ];
  
   List suggestion=[
@@ -246,7 +253,8 @@ class profilescreen extends StatelessWidget {
           children: [
 
              Container(
-            color: Color(0xFFFAE6D5),
+            color: bgColors[index],
+            //color: Color(0xFFD4EEF3),
             ),
            
             //time and price
