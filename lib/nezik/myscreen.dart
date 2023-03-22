@@ -55,6 +55,7 @@ class homescreen extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Icon(icon),
                     Text("Delivering to",
                     style: TextStyle(
                       fontSize: 15,
@@ -68,7 +69,7 @@ class homescreen extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 20,fontWeight: FontWeight.bold,
                       ),),
-                      Icon(Icons.arrow_drop_down,color:Color(0xFFFF2F08),),
+                      
                       
                     ],)
                   ],
