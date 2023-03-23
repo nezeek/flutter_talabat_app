@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_talabat_app/Dlkhaz/Dscreen1.dart';
 
 class Datascreen extends StatelessWidget {
   const Datascreen({super.key});
@@ -10,9 +11,21 @@ class Datascreen extends StatelessWidget {
     return Scaffold(
 backgroundColor: Colors.white,
 appBar: AppBar(
+  
   backgroundColor: Colors.white,
   elevation: 0,
-leading:  Icon(Icons.cancel,color: Color.fromARGB(255, 201, 194, 194),size: 40,) ,
+leading:  IconButton(onPressed: (){
+     Navigator.push(context, MaterialPageRoute(builder: (context)=> Dsc())); },icon: Icon(Icons.cancel,color: Color.fromARGB(255, 184, 177, 177),size:40 ,)),
+/*
+actions: [
+  Builder(builder: (context){
+    return IconButton(onPressed: (){
+      Navigator.push(context, MaterialPageRoute(builder: (context)=> Dsc()));
+   
+    },
+     icon: Icon(Icons.cancel,color: Color.fromARGB(255, 184, 177, 177),size:40 ,),);
+  })
+],*/
 
 ),
 body: Column(
