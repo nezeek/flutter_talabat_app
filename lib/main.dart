@@ -3,6 +3,7 @@ import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // home: ResturantInfo() ,
-      home:Datascreen(),
+      home:HomeScreen(),
 
     );
   }
