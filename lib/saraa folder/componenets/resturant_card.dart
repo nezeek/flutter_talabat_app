@@ -40,7 +40,7 @@ class MenuCard extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Text(
-                "\$${price.toStringAsFixed(2)}",
+                "\IDQ ${price.toStringAsFixed(3)}",
                 style:
                     const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
