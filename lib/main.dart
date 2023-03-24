@@ -23,10 +23,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
       // home: ResturantInfo() ,
-      home:HomeScreen(),
-
+      home:Datascreen(),
     );
   }
 }

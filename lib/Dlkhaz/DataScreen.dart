@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_talabat_app/Dlkhaz/Dscreen1.dart';
+import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 class Datascreen extends StatelessWidget {
   const Datascreen({super.key});
@@ -15,7 +17,9 @@ appBar: AppBar(
   backgroundColor: Colors.white,
   elevation: 0,
 leading:  IconButton(onPressed: (){
-     Navigator.push(context, MaterialPageRoute(builder: (context)=> Dsc())); },icon: Icon(Icons.cancel,color: Color.fromARGB(255, 184, 177, 177),size:40 ,)),
+     Navigator.push(context,
+      MaterialPageRoute(builder: (context)=> HomeScreen())); },
+      icon: Icon(Icons.cancel,color: Color.fromARGB(255, 184, 177, 177),size:40 ,)),
 /*
 actions: [
   Builder(builder: (context){
@@ -58,8 +62,14 @@ Column(
   color: Colors.black,
     ),
     ),
-    Text("Av burgarra galak ya xusha cbu naheta gutn tama we raw3aya tueke bxuye de kaya2",style: TextStyle(fontSize: 10),),
+    
     Column(children: <Widget>[
+      Row(children:<Widget> [
+        Column(children:<Widget>  [
+Text("2 black angus beef patty                                     ",
+style: TextStyle(fontSize: 18),),
+        ],)
+      ],),
     Row(
       children: <Widget>[
 Column(children: <Widget>[
