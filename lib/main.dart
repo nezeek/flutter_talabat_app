@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
+import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
+import 'package:flutter_talabat_app/hawjeen/mm.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
 import 'package:flutter_talabat_app/saraa%20folder/component/resturant_appbar.dart';
 import 'package:flutter_talabat_app/saraa%20folder/component/resturant_info.dart';
 
 import 'package:flutter_talabat_app/saraa%20folder/component/resturant_page.dart';
 import 'package:flutter_talabat_app/saraa%20folder/newF.dart';
+
+import 'hawjeen/hh.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,12 +29,10 @@ class MyApp extends StatelessWidget {
       ),
 
       // home: ResturantInfo() ,
-      home: ResturantPage(),
-
+      home: homescreen(),
     );
   }
 }
-
 /*
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
@@ -37,8 +40,6 @@ import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/hawjeen/mm.dart';
 import 'package:flutter_talabat_app/manal/msScreen.dart';
 import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
-
-
 
 void main() {
   runApp(const MyApp());
@@ -56,7 +57,7 @@ class _MyAppState extends State<MyApp> {
   int myIndex = 0;
   List<Widget> widgetList = const [
     MySc(),
-   search(),
+    search(),
     Account(),
   ];
   @override
@@ -67,23 +68,6 @@ class _MyAppState extends State<MyApp> {
           primarySwatch: Colors.orange,
         ),
         home: Scaffold(
-            appBar: AppBar(
-              backgroundColor: Color.fromARGB(255, 247, 223, 157),
-              elevation: 0,
-              title: Column(
-                children: [
-                  Text(
-                    "Delivering to",
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.w300),
-                  ),
-                  Text(
-                    "Home,Duhok street",
-                    style: TextStyle(color: Colors.black),
-                  )
-                ],
-              ),
-            ),
             body: widgetList[myIndex],
             bottomNavigationBar: BottomNavigationBar(
                 onTap: (index) {

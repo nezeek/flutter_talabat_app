@@ -58,21 +58,34 @@ flutter:
 
 
   assets:
+     - assets/1stcard.jpg
      - assets/2in1.jpeg
      - assets/88.jpg
-     - assets/im.jpg
+     - assets/Akree.jpg
+     - assets/BOGO.jpg 
+     - assets/burger.png
      - assets/burgerbox.png
      - assets/burgerking.png
+     - assets/coffeelover.jpg
      - assets/ddk.jpeg
+     - assets/desserts.jpg
      - assets/donutworld.png
      - assets/eatandgo.png
+     - assets/freedelivery.jpg
+     - assets/im.jpg
+     - assets/marjjan.jpg
      - assets/mshmsh.png
      - assets/nostalgia.jpeg
      - assets/ofelia.jpg
+     - assets/offers.jpg
+     - assets/pastorders.jpg
      - assets/shaghaf.jpeg
-     - assets/torino.png
-     - assets/Wienerwald.png
      - assets/pizza.jpg
+     - assets/texass.jpg
+     - assets/torino.png
+     - assets/torinoo.jpg
+     - assets/viber_image_2023-03-23_23-03-04-751.jpg
+     - assets/Wienerwald.png
      - assets/icons/
      - images/
      - images/
