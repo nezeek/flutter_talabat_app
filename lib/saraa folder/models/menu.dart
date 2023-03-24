@@ -19,7 +19,6 @@ final List<CategoryMenu> demoCategoryMenus = [
     category: "Trending",
     items: [
       Menu(title: "Duble Cheese Burger", image: "https://www.desktopbackground.org/download/1280x1024/2010/06/04/28023_cheeseburger-hd-magnificent-wallpapers-free-hd-wallpapers-download_1920x1080_h.jpg", description: "2 black angus beef patty",price: 12.000),
-     Menu(title: "Chiken Burger", image: "https://th.bing.com/th/id/OIP.1iga5uTndtz8Yro5x-PTZwHaFh?w=257&h=191&c=7&r=0&o=5&pid=1.7", description: "crispy chiken patty,green salad",price: 8.500),
       Menu(title: "Curly Fries", image: "https://th.bing.com/th/id/OIP.bO2_Qdxj4d4ENlGuCbVNRgHaE7?w=261&h=180&c=7&r=0&o=5&pid=1.7", description: " ",price: 3.500),
       Menu(title: "Margherita pizza", image: "https://th.bing.com/th/id/OIP.8jZsScsCyLaXkVWldiDB1wHaHa?pid=ImgDet&w=640&h=640&rs=1", description: "mozzarela cheese,orango and tomato",price: 7.000),
     ],
