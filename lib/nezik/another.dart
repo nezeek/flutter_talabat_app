@@ -252,7 +252,8 @@ class profilescreen extends StatelessWidget {
         child: Stack(
           children: [
 
-             Container(
+            Container(
+            //child: Image.asset("assets/pizza.jpg"),
             color: bgColors[index],
             //color: Color(0xFFD4EEF3),
             ),
