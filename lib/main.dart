@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
+import 'package:flutter_talabat_app/Dlkhaz/DataScreen2.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
@@ -21,10 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
-      home: home() ,
-
-
+      home: homescreen(),
     );
   }
 }
