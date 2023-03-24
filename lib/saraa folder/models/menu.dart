@@ -42,10 +42,24 @@ final List<CategoryMenu> demoCategoryMenus = [
     ],
   ),
   CategoryMenu(
-    category: "Kids Meals",
+    category: "Pizza",
     items: [
-      Menu(title: "Kids Burger Meal", image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", description: "served with french friese",price:6.500),
-      Menu(title: "Chicken Popcorn Meal", image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", description: "served french with drink",price: 6.500),
+      Menu(title: "Mexican pizza", image: "https://th.bing.com/th/id/OIP.ucBJllTYWmFXlTfWFrbTWAHaE8?pid=ImgDet&w=1024&h=683&rs=1", description: "beef,mixed peppers,olives,jalapeno",price: 10.500),
+      Menu(title: "Vegetable pizza", image: "https://th.bing.com/th/id/OIP.KHA18N-jzT5UihW78RxnPAHaKX?pid=ImgDet&rs=1", description: "zucchini ,eggplant,mixed peppers",price: 8.500),
+      Menu(title: "Margherita pizza", image: "https://th.bing.com/th/id/OIP.8jZsScsCyLaXkVWldiDB1wHaHa?pid=ImgDet&w=640&h=640&rs=1", description: "mozzarela cheese,orango and tomato",price: 7.000),
+      Menu(title: "Meat United Pizza", image: "https://patch.com/img/cdn20/users/22871539/20190116/032128/styles/raw/public/processed_images/chicago_overhead_2-1547669723-7086.jpg", description: "Mozarella cheese,orango and tomato",price:7.500),
+      Menu(title: "Mixed Pizza", image: "https://th.bing.com/th/id/OIP.ZvIUdAOahjAdaX7G8J3E4wHaEw?pid=ImgDet&w=1536&h=986&rs=1", description: "Mozarella cheese,orango and tomato",price: 6.500),
+      Menu(title: "Tuna pizza", image: "https://th.bing.com/th/id/OIP.j82zQpAhlymbK1CClx8QRQHaHa?pid=ImgDet&rs=1", description: "Tuna,onions,black olive",price: 10.000),
+    ],
+  ),
+   CategoryMenu(
+    category: "Cold Drinks",
+    items: [
+     Menu(title: "Water",image: "https://th.bing.com/th/id/OIP.9jWjb1Iyyet7bNcnns5LxwAAAA?pid=ImgDet&w=250&h=250&rs=1", description: " ", price: 1.00),
+      Menu(title: "Pepsi", image: "https://theluxrestaurant.com/wp-content/uploads/2021/08/PEPSI.gif", description: " ",price: 1.000),
+      Menu(title: "Mirinda Orange", image: "https://th.bing.com/th/id/R.3cde7858d5bc0864c36d916576e9d41d?rik=yzjJo72zFJAnmw&pid=ImgRaw&r=0", description: " ",price: 1.000),
+      Menu(title: "7 Up", image: "https://th.bing.com/th/id/R.3e78b998aa7a7e9e844a96a60e5c3853?rik=Gj2aClPlhpyUuw&pid=ImgRaw&r=0", description: " ",price: 1.000),
+      
     ],
   ),
 ];
