@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 
 class MenuCard extends StatelessWidget {
   final String title, image, description;
@@ -14,7 +15,15 @@ class MenuCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Datascreen()),
+    );
+  },
+  child:
+  Container(
       width: double.infinity,
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
@@ -54,6 +63,10 @@ class MenuCard extends StatelessWidget {
           )
         ],
       ),
-    );
+    ),
+);
+
   }
 }
+
+ 
