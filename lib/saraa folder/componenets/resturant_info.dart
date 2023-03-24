@@ -14,11 +14,11 @@ class ResturantInfo extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  "Torino pizza",
+                  "2in1",
                   style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
                 ),
                 Text(
-                  "Pizza, Sandwiches Italian",
+                  "Pizza,Burgers,Italian",
                   style: TextStyle(fontSize: 12),
                 ),
               ],

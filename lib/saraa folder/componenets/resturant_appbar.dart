@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_talabat_app/nezik/myscreen.dart';
 
 class ResturantAppbar extends StatelessWidget {
   const ResturantAppbar({super.key});
@@ -6,13 +7,13 @@ class ResturantAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      expandedHeight: 200,
+      expandedHeight: 130,
       pinned: true,
       backgroundColor: Colors.white,
       elevation: 0,
       flexibleSpace: FlexibleSpaceBar(
         background: Image.network(
-          "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.creativemarket.com/0.1.0/ps/4758723/910/607/m2/fpnw/wm1/g4kguyfx49repfpogj8st1b7g9xg30syyjvriutskzh42yxoevzsgpne2tp9zqju-.jpg?1531658312&s=b382e41671115a33356c1d66755b7430",
           fit: BoxFit.cover,
         ),
       ),
@@ -20,10 +21,10 @@ class ResturantAppbar extends StatelessWidget {
         padding: EdgeInsets.only(left: 16),
         child: CircleAvatar(
           backgroundColor: Colors.white,
-          child: Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-          ),
+          child: IconButton(onPressed: (){
+     Navigator.push(context,
+      MaterialPageRoute(builder: (context)=> homescreen())); },
+      icon: Icon(Icons.arrow_back,color: Colors.black,)),
         ),
       ),
       actions: [
