@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
+import 'package:flutter_talabat_app/Dlkhaz/DataScreen2.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: ResturantInfo() ,
-      home:HomeScreen(),
+      home:Datascreen2(),
     );
   }
 }
