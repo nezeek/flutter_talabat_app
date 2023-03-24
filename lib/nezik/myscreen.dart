@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
 import 'package:flutter_talabat_app/nezik/logo.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 class homescreen extends StatelessWidget {
   // const homepage({super.key});
@@ -99,7 +100,14 @@ class homescreen extends StatelessWidget {
               shrinkWrap: true,
               itemCount: foods.length,
               itemBuilder: (context,index){
-                return Container(
+                return GestureDetector(
+                  onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>logo_list(),),
+            );
+           },
+               child: Container(
                   width: 110,
                   height: 220,
                   margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
@@ -117,17 +125,17 @@ class homescreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                    IconButton(onPressed: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context)=>logo_list()),
-                      );
-                    }, icon: Image.asset("images/${foods[index]}.png",
-                    height: 80,
-                    width: 80,),),
-                    // Image.asset("images/${foods[index]}.png",
+                    // IconButton(onPressed: (){
+                    //   Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(builder: (context)=>logo_list()),
+                    //   );
+                    // }, icon: Image.asset("images/${foods[index]}.png",
                     // height: 80,
-                    // width: 80,),
+                    // width: 80,),),
+                    Image.asset("images/${foods[index]}.png",
+                    height: 80,
+                    width: 80,),
                     Text(foods[index],
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
@@ -135,7 +143,7 @@ class homescreen extends StatelessWidget {
                       color: Colors.black87
                     ),),
                   ],),
-                );
+             ), );
               }
             ),
            ),
@@ -246,7 +254,14 @@ class homescreen extends StatelessWidget {
                 physics: NeverScrollableScrollPhysics(),
         itemCount: logolist.length,
         itemBuilder: (BuildContext context,int index){
-        return Container(
+        return GestureDetector(
+            onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>HomeScreen(),),
+            );
+           },
+        child:Container(
         height: 110,
         decoration: BoxDecoration(
         color: Colors.white,
@@ -348,7 +363,7 @@ class homescreen extends StatelessWidget {
           ), 
           ),
         ],),
-    );
+                 ), );
         },
         
       ),

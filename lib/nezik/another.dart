@@ -4,7 +4,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
+import 'package:flutter_talabat_app/nezik/logo.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 class profilescreen extends StatelessWidget {
   List foods=[
@@ -105,7 +107,14 @@ class profilescreen extends StatelessWidget {
               shrinkWrap: true,
               itemCount: foods.length,
               itemBuilder: (context,index){
-                return Container(
+                return GestureDetector(
+                  onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>logo_list(),),
+            );
+           },
+                child:Container(
                   width: 110,
                   height: 220,
                   margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
@@ -133,7 +142,7 @@ class profilescreen extends StatelessWidget {
                       color: Colors.black87
                     ),),
                   ],),
-                );
+            ),);
               }
             ),
            ),
@@ -239,7 +248,14 @@ class profilescreen extends StatelessWidget {
                 physics: NeverScrollableScrollPhysics(),
               itemCount: logolist.length,  
               itemBuilder: (BuildContext context, int index) {
-                return Padding(
+                return GestureDetector(
+                  onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>HomeScreen(),),
+            );
+           },
+                child:Padding(
                   padding: const EdgeInsets.all(3.0),
                   child: Container(
         clipBehavior: Clip.hardEdge,
@@ -253,7 +269,6 @@ class profilescreen extends StatelessWidget {
           children: [
 
             Container(
-            //child: Image.asset("assets/pizza.jpg"),
             color: bgColors[index],
             //color: Color(0xFFD4EEF3),
             ),
@@ -388,7 +403,7 @@ class profilescreen extends StatelessWidget {
                   ),
                 ],),),
 
-          ]),),);
+          ]),),),);
                 },),),
 
         //     SizedBox(
