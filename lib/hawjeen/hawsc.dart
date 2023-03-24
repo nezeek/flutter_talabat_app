@@ -173,7 +173,14 @@ class MySc extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: shortcutz.length,
                 itemBuilder: (context, index) {
-                  return ListTile();
+                  return Container(
+                    width: 90,
+                    height: 30,
+                    color: Colors.white,
+                    child: Column(
+                      children: [Container(child: Text("CR7"))],
+                    ),
+                  );
                 },
               )
             ],
