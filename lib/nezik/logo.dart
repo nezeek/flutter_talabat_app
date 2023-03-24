@@ -1,40 +1,11 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
-import 'package:flutter_talabat_app/nezik/logo.dart';
 
-class homescreen extends StatelessWidget {
-  // const homepage({super.key});
-  List foods=[
-    "More For Less",
-    "top choice",
-    "BOGO",
-    "coffee lovers",
-    "delivery",
-    "Available Now",
-    "desserts",
-    "exclusive",
-    "Pizza Lovers",
-    "Burger Lovers",
-  ];
-
-  List<Color>bgColors=[
-    Color(0xFFFBDCDA),
-    Color(0xFFD4EEF3),
-    Color(0xFFFAE6D5),
-    Color(0xFFEFCFE7),
-    Color(0xFFFBDCDA),
-    Color(0xFFD4EEF3),
-    Color(0xFFFAE6D5),
-    Color(0xFFEFCFE7),
-    Color(0xFFFBDCDA),
-    Color(0xFFD4EEF3),
-  ];
- 
-  List suggestion=[
+class logo_list extends StatelessWidget {
+  //const logo_list({super.key});
+   List suggestion=[
     "Sort by",
     "Cuisines",
     "Rating 4.0+",
@@ -45,12 +16,12 @@ class homescreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.white,
-      child:SingleChildScrollView(
+    return Scaffold(
+      //appBar: AppBar(title: Text("data",style: TextStyle(color: Colors.black),),shadowColor: Colors.black,backgroundColor: Color(0xFFD4EEF3),),
+    body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 45,),
+            SizedBox(height: 65,),
             Padding(padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -58,7 +29,7 @@ class homescreen extends StatelessWidget {
                Row(children: [
                 IconButton(onPressed: (){
                   Navigator.pop(context);}, 
-                icon:Icon( Icons.arrow_back),
+                icon:Icon( Icons.arrow_back,color: Colors.black,),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,144 +43,17 @@ class homescreen extends StatelessWidget {
                     SizedBox(height: 5),
                     Row(
                       children: [
-                      //Icon(Icons.location_on,color: Color(0xFFFF2F08),),
                       Text("Duhok/Iraq",
                       style: TextStyle(
                         fontSize: 20,fontWeight: FontWeight.bold,
                       ),),
-                      
                     ],)
                   ],),
                ],),
-                Stack(
-                  children: [
-                    Container(
-                      height: 60,
-                      width: 60,
-                     child: Icon(Icons.search,color: Colors.black,), ),
-                  ],),
               ],),
             ),
 
-            //Second Row
-           SizedBox(
-            height: 140,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              shrinkWrap: true,
-              itemCount: foods.length,
-              itemBuilder: (context,index){
-                return Container(
-                  width: 110,
-                  height: 220,
-                  margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
-                  padding: EdgeInsets.only(top:5,bottom: 5),
-                  decoration: BoxDecoration(
-                    color: bgColors[index],
-                    //color: Color(0xFFD4EEF3),
-                    borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2, blurRadius: 1, offset: Offset(0, 3)
-                      ),
-                    ]),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                    IconButton(onPressed: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context)=>logo_list()),
-                      );
-                    }, icon: Image.asset("images/${foods[index]}.png",
-                    height: 80,
-                    width: 80,),),
-                    // Image.asset("images/${foods[index]}.png",
-                    // height: 80,
-                    // width: 80,),
-                    Text(foods[index],
-                    style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16,
-                      color: Colors.black87
-                    ),),
-                  ],),
-                );
-              }
-            ),
-           ),
-
-
-           //Third Row
-           Padding(
-            padding: EdgeInsets.symmetric(horizontal:15,vertical: 5 ),
-           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "All Restaurants",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                ),),
-
-              Container(
-              margin: EdgeInsets.all(13),
-              width: 75,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color:Color(0xFFFAE6D5),
-                
-                boxShadow: [
-                    BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
-                    spreadRadius: 1,
-                 ),]
-              ),
-              child:Stack(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                Container(
-                  height: 30,
-                  width: 35,
-                  decoration: BoxDecoration(   
-                  borderRadius: BorderRadius.only(   
-                  bottomLeft: Radius.circular(15),topLeft: Radius.circular(15),
-                  ),
-                  color: Colors.white,),
-                  child:IconButton(
-                    onPressed: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context)=>profilescreen()),
-                      );
-                    }, 
-                  icon: Icon(Icons.crop_7_5,
-                   color: Colors.black45,),
-                  ),
-                  // Icon(Icons.crop_7_5,
-                  // color: Colors.black45,),
-                ),
-
-                Container(
-                  padding: EdgeInsets.only(right: 5,left: 5),
-                  margin: EdgeInsets.all(3),
-                  child: Icon(Icons.list,
-                  color: Color(0xFFFF2F08),),
-                ),
-                  ],),
-              ],),
-            ),
-
-            ],),
-           ),
-           
-
-          //Fourth Row
-            SizedBox(
+    SizedBox(
             height: 40,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -218,7 +62,7 @@ class homescreen extends StatelessWidget {
               itemBuilder: (context,index){
                 return Container(
                   width: 140,
-                  height: 35,
+                  height: 45,
                   margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
@@ -269,7 +113,7 @@ class homescreen extends StatelessWidget {
             image:DecorationImage(image:AssetImage(logolist[index].imageurl,),
             ),),
             padding: EdgeInsets.all(12),
-            margin: EdgeInsets.only(left: 8,right: 5),
+            margin: EdgeInsets.only(left: 8,right: 5,top: 5),
             width: 90,
             height: 90,
           ),
@@ -353,13 +197,8 @@ class homescreen extends StatelessWidget {
         
       ),
               ),
+          ]),)
 
-
-
-           
-          ]),
-            
-            ),
-      );
+    );
   }
 }

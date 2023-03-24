@@ -2,16 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
+<<<<<<< HEAD
 import 'package:flutter_talabat_app/hawjeen/mm.dart';
+=======
+>>>>>>> b78f9da0400389dc7295548cdb677aa1f7f6f37f
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
-import 'package:flutter_talabat_app/saraa%20folder/component/resturant_appbar.dart';
-import 'package:flutter_talabat_app/saraa%20folder/component/resturant_info.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
+
+
+
+<<<<<<< HEAD
 import 'package:flutter_talabat_app/saraa%20folder/component/resturant_page.dart';
 import 'package:flutter_talabat_app/saraa%20folder/newF.dart';
 
 import 'hawjeen/hh.dart';
 
+=======
+>>>>>>> b78f9da0400389dc7295548cdb677aa1f7f6f37f
 void main() {
   runApp(const MyApp());
 }
@@ -27,9 +35,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
       // home: ResturantInfo() ,
+<<<<<<< HEAD
       home: homescreen(),
+=======
+      home:HomeScreen(),
+>>>>>>> b78f9da0400389dc7295548cdb677aa1f7f6f37f
     );
   }
 }
