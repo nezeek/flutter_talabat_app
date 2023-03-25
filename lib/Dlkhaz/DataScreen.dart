@@ -11,7 +11,7 @@ class Datascreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-backgroundColor: Colors.white,
+backgroundColor: Color.fromARGB(255, 236, 235, 235),
 appBar: AppBar(
   
   backgroundColor: Colors.white,
@@ -19,7 +19,7 @@ appBar: AppBar(
 leading:  IconButton(onPressed: (){
      Navigator.push(context,
       MaterialPageRoute(builder: (context)=> HomeScreen())); },
-      icon: Icon(Icons.cancel,color: Color.fromARGB(255, 184, 177, 177),size:40 ,)),
+      icon: Icon(Icons.cancel,color: Color.fromARGB(255, 221, 218, 218),size:40 ,)),
 /*
 actions: [
   Builder(builder: (context){
@@ -58,7 +58,7 @@ children:<Widget> [
 Column(
   children:<Widget> [
     Text("Duble Cheese Burgerr",
-    style: TextStyle(fontSize: 37,fontWeight: FontWeight.bold,
+    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
   color: Colors.black,
     ),
     ),
@@ -66,8 +66,8 @@ Column(
     Column(children: <Widget>[
       Row(children:<Widget> [
         Column(children:<Widget>  [
-Text("2 black angus beef patty                                     ",
-style: TextStyle(fontSize: 18),),
+Text("2 black angus beef patty                                       ",
+style: TextStyle(fontSize: 15),),
         ],)
       ],),
     Row(
@@ -77,11 +77,11 @@ Column(children: <Widget>[
 Text("av burgara galak yah xusha bchjdfujkedfhdvhfg  jhghrhtkfwenhdfscvfeyrfdjhwdgy",
 style: TextStyle(fontSize: 10,height: 1.5,),),*/
 Text("IQD 12,000                                              ",
-  style: TextStyle(fontSize: 22,fontWeight: FontWeight.w400,
+  style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400,
   color: Colors.black),),
 
 Row(children: <Widget>[
-  Text("                                                                    "),
+  Text("                                                 "),
 SizedBox(
   
   width: 55,
@@ -128,14 +128,15 @@ Row(
 ]
 ,),
 ),
+
 Container(
 margin: EdgeInsets.only(top: 10,),
 padding: EdgeInsets.only(top:10,
 left: 10,),
-height: 100,
+height: 110,
 decoration: BoxDecoration(color: Color.fromARGB(244, 248, 243, 248),
-borderRadius: BorderRadius.only(topLeft: Radius.circular(5),
-topRight: Radius.circular(5),
+borderRadius: BorderRadius.only(topLeft: Radius.circular(7),
+topRight: Radius.circular(7),
 ),
 ),
 child: Column(children: <Widget>[
@@ -144,7 +145,7 @@ child: Column(children: <Widget>[
 Row(children:<Widget> [
 Icon(Icons.chat_bubble_outline),
 Row(children: <Widget>[
- Text("Any special request ?",style: TextStyle(fontSize: 20),),
+ Text("Any special request ?",style: TextStyle(fontSize: 16),),
  Text("                         Add note",
  style: TextStyle(fontSize: 15,color: Colors.deepOrange),)
 ],
@@ -152,10 +153,10 @@ Row(children: <Widget>[
 ),
 ],
 ),
-
+Text(" "),
 SizedBox(
 height: 55,
-width: 370,
+width: 360,
 child: FloatingActionButton(
   backgroundColor: Colors.deepOrange,
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),),
