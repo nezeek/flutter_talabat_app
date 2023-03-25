@@ -156,7 +156,7 @@ Row(children: <Widget>[
 Text(" "),
 SizedBox(
 height: 55,
-width: 360,
+width: 350,
 child: FloatingActionButton(
   backgroundColor: Colors.deepOrange,
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),),
