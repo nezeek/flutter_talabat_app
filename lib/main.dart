@@ -3,7 +3,9 @@ import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen2.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
+import 'package:flutter_talabat_app/manal/msScreen.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/nezik/search.dart';
 import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 

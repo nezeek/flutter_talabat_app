@@ -2,9 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_talabat_app/manal/msScreen.dart';
 import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
 import 'package:flutter_talabat_app/nezik/logo.dart';
+import 'package:flutter_talabat_app/nezik/search.dart';
 import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 class homescreen extends StatelessWidget {
@@ -51,16 +53,22 @@ class homescreen extends StatelessWidget {
       child:SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 45,),
+            SizedBox(height: 25,),
             Padding(padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [  
                Row(children: [
-                IconButton(onPressed: (){
-                  Navigator.pop(context);}, 
-                icon:Icon( Icons.arrow_back),
-                ),
+                 Column(children: [
+            Padding(padding: EdgeInsets.symmetric(
+              vertical: 12,
+              horizontal: 3),
+              child:Container(
+              child:IconButton(onPressed: (){
+                  Navigator.pop(context);},  
+                  icon: Icon(Icons.arrow_back),color: Colors.black,)
+              ),), ],),
+                
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -85,9 +93,15 @@ class homescreen extends StatelessWidget {
                 Stack(
                   children: [
                     Container(
-                      height: 60,
+                      height: 70,
                       width: 60,
-                     child: Icon(Icons.search,color: Colors.black,), ),
+                     child: IconButton(onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context)=>search_file()),
+                      );}, 
+                      icon: Icon(Icons.search,color: Colors.black,),)
+                      ),
                   ],),
               ],),
             ),
