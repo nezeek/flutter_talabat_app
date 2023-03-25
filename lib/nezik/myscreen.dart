@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/manal/msScreen.dart';
 import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
@@ -65,7 +66,8 @@ class homescreen extends StatelessWidget {
               horizontal: 3),
               child:Container(
               child:IconButton(onPressed: (){
-                  Navigator.pop(context);},  
+                  Navigator.push(context,  MaterialPageRoute(builder: (context)=>MySc()));
+                  },  
                   icon: Icon(Icons.arrow_back),color: Colors.black,)
               ),), ],),
                 
@@ -139,14 +141,6 @@ class homescreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                    // IconButton(onPressed: (){
-                    //   Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(builder: (context)=>logo_list()),
-                    //   );
-                    // }, icon: Image.asset("images/${foods[index]}.png",
-                    // height: 80,
-                    // width: 80,),),
                     Image.asset("images/${foods[index]}.png",
                     height: 80,
                     width: 80,),

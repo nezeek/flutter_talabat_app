@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
 import 'package:flutter_talabat_app/nezik/logo.dart';
@@ -71,7 +72,8 @@ class profilescreen extends StatelessWidget {
                 horizontal: 3),
                 child:Container(
                  child:IconButton(onPressed: (){
-                    Navigator.pop(context);},  
+                  Navigator.push(context,  MaterialPageRoute(builder: (context)=>MySc()));
+                  },    
                   icon: Icon(Icons.arrow_back),color: Colors.black,),
               ),), ],),
                 Column(
