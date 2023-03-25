@@ -58,7 +58,7 @@ children:<Widget> [
 Column(
   children:<Widget> [
     Text("Duble Cheese Burgerr",
-    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
+    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
   color: Colors.black,
     ),
     ),
@@ -77,7 +77,7 @@ Column(children: <Widget>[
 Text("av burgara galak yah xusha bchjdfujkedfhdvhfg  jhghrhtkfwenhdfscvfeyrfdjhwdgy",
 style: TextStyle(fontSize: 10,height: 1.5,),),*/
 Text("IQD 12,000                                              ",
-  style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400,
+  style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,
   color: Colors.black),),
 
 Row(children: <Widget>[
@@ -95,7 +95,7 @@ child:OutlinedButton(
 
 Row(
   children: <Widget>[
-    Text("01",style: TextStyle(fontSize: 20),),
+    Text("01",style: TextStyle(fontSize: 19),),
    
   ],
 ),
@@ -145,9 +145,9 @@ child: Column(children: <Widget>[
 Row(children:<Widget> [
 Icon(Icons.chat_bubble_outline),
 Row(children: <Widget>[
- Text("Any special request ?",style: TextStyle(fontSize: 16),),
+ Text("Any special request ?",style: TextStyle(fontSize: 17),),
  Text("                         Add note",
- style: TextStyle(fontSize: 15,color: Colors.deepOrange),)
+ style: TextStyle(fontSize: 14,color: Colors.deepOrange),)
 ],
 
 ),
@@ -161,8 +161,8 @@ child: FloatingActionButton(
   backgroundColor: Colors.deepOrange,
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),),
   onPressed: (){},
-child: Text("  Add to basket                    12,000 IQD",
-style:TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.white),
+child: Text("  Add to basket            12,000 IQD",
+style:TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),
 
 ),
 ),
