@@ -33,7 +33,8 @@ class _MyAppState extends State<MyApp> {
           primarySwatch: Colors.orange,
         ),
         home: Scaffold(
-            /*appBar: AppBar(
+            /*
+            appBar: AppBar(
               backgroundColor: Color.fromARGB(255, 247, 223, 157),
               elevation: 0,
               title: Column(
