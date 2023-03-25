@@ -21,8 +21,8 @@ class logo_list extends StatelessWidget {
     body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 65,),
-            Padding(padding: EdgeInsets.symmetric(horizontal: 20),
+            SizedBox(height: 65),
+            Padding(padding: EdgeInsets.symmetric(horizontal: 20,vertical: 18),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [  
