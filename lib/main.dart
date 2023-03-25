@@ -1,70 +1,80 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
+import 'package:flutter_talabat_app/hawjeen/mm.dart';
+import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
 
-class MySc extends StatelessWidget {
-  const MySc({super.key});
+import 'Dlkhaz/account.dart';
+import 'manal/msScreen.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  // This widget is the root of your application.
+  int myIndex = 0;
+  List<Widget> widgetList = const [
+    MySc(),
+    search(),
+    Account(),
+  ];
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Image.asset("assets/1stcard.jpg"),
-              Positioned(
-                bottom: 120,
-                left: 10,
-                right: 0,
-                child: Text(
-                  'Top Choice\nRestaurants',
-                  style: TextStyle(color: Colors.black, fontSize: 32),
-                ),
-              ),
-              Positioned(
-                bottom: 80,
-                left: 10,
-                right: 0,
-                child: Text(
-                  "Restaurants recognized for great\nservice and quality on Talabat",
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
-                ),
-              ),
-              Positioned(
-                top: 130,
-                left: 20,
-                child: ElevatedButton(
-                  child: Text(
-                    "Order From Top Choice",
+    return MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.orange,
+        ),
+        home: Scaffold(
+            appBar: AppBar(
+              backgroundColor: Color.fromARGB(255, 247, 223, 157),
+              elevation: 0,
+              title: Column(
+                children: [
+                  Text(
+                    "Delivering to",
                     style: TextStyle(
-                        color: Color.fromARGB(231, 118, 116, 9), fontSize: 14),
+                        color: Colors.black, fontWeight: FontWeight.w300),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => homescreen()),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    minimumSize: Size(150, 40),
-                    //maximumSize: Size(150, 40),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(50))),
-                    backgroundColor: Color.fromARGB(255, 220, 217, 220),
-                    padding: EdgeInsets.all(20),
-                  ),
-                ),
+                  Text(
+                    "Home,Duhok street",
+                    style: TextStyle(color: Colors.black),
+                  )
+                ],
               ),
-            ],
-          ),
-        ],
-      ),
-    );
+            ),
+            body: widgetList[myIndex],
+            bottomNavigationBar: BottomNavigationBar(
+                onTap: (index) {
+                  setState(() {
+                    myIndex = index;
+                  });
+                },
+                currentIndex: myIndex,
+                items: const [
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.home),
+                    label: 'Home',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.search),
+                    label: 'search',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.person),
+                    label: 'account',
+                  ),
+                ])));
   }
 }
+
 /*import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen2.dart';
