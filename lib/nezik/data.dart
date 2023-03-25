@@ -27,6 +27,15 @@ Logo(
   price: "IQD 2500", 
   time: "48 mins",
   top: "4.6 (100+)"),
+  
+  Logo(
+  title: "2in1", 
+  description: "Pizza,Burgers,Italian", 
+  imageurl: "images/2in1.jpg", 
+  price: "IQD 2500", 
+  time: "41 mins",
+  top: "4.1 (100+)"),
+
 
   Logo(
   title: "LUNAR", 
@@ -115,14 +124,6 @@ Logo(
   price: "IQD 2500", 
   time: "41 mins",
   top: "4.6 (100+)"),
-
-  Logo(
-  title: "2in1", 
-  description: "Pizza,Burgers,Italian", 
-  imageurl: "images/2in1.jpg", 
-  price: "IQD 2500", 
-  time: "41 mins",
-  top: "4.1 (100+)"),
 
   Logo(
   title: "Segafredo", 

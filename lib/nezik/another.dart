@@ -4,7 +4,10 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_talabat_app/nezik/another.dart';
 import 'package:flutter_talabat_app/nezik/data.dart';
+import 'package:flutter_talabat_app/nezik/logo.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/nezik/search.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 class profilescreen extends StatelessWidget {
   List foods=[
@@ -31,6 +34,13 @@ class profilescreen extends StatelessWidget {
     Color(0xFFEFCFE7),
     Color(0xFFFBDCDA),
     Color(0xFFD4EEF3),
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
+    Color(0xFFFAE6D5),
+    Color(0xFFEFCFE7),
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
+    Color(0xFFFAE6D5),
   ];
  
   List suggestion=[
@@ -49,16 +59,21 @@ class profilescreen extends StatelessWidget {
       child:SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 45,),
+            SizedBox(height: 25,),
             Padding(padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [  
                Row(children: [
-                IconButton(onPressed: (){
-                  Navigator.pop(context);}, 
-                icon:Icon( Icons.arrow_back),
-                ),
+                Column(children: [
+                Padding(padding: EdgeInsets.symmetric(
+                vertical: 12,
+                horizontal: 3),
+                child:Container(
+                 child:IconButton(onPressed: (){
+                    Navigator.pop(context);},  
+                  icon: Icon(Icons.arrow_back),color: Colors.black,),
+              ),), ],),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -83,9 +98,15 @@ class profilescreen extends StatelessWidget {
                 Stack(
                   children: [
                     Container(
-                      height: 60,
+                      height: 70,
                       width: 60,
-                     child: Icon(Icons.search,color: Colors.black,), ),
+                     child: IconButton(onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context)=>search_file()),
+                      );}, 
+                      icon: Icon(Icons.search,color: Colors.black,),)
+                      ),
                   ],),
               ],),
             ),
@@ -98,7 +119,14 @@ class profilescreen extends StatelessWidget {
               shrinkWrap: true,
               itemCount: foods.length,
               itemBuilder: (context,index){
-                return Container(
+                return GestureDetector(
+                  onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>logo_list(),),
+            );
+           },
+                child:Container(
                   width: 110,
                   height: 220,
                   margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
@@ -126,7 +154,7 @@ class profilescreen extends StatelessWidget {
                       color: Colors.black87
                     ),),
                   ],),
-                );
+            ),);
               }
             ),
            ),
@@ -232,7 +260,14 @@ class profilescreen extends StatelessWidget {
                 physics: NeverScrollableScrollPhysics(),
               itemCount: logolist.length,  
               itemBuilder: (BuildContext context, int index) {
-                return Padding(
+                return GestureDetector(
+                  onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=>HomeScreen(),),
+            );
+           },
+                child:Padding(
                   padding: const EdgeInsets.all(3.0),
                   child: Container(
         clipBehavior: Clip.hardEdge,
@@ -245,8 +280,9 @@ class profilescreen extends StatelessWidget {
         child: Stack(
           children: [
 
-             Container(
-            color: Color(0xFFFAE6D5),
+            Container(
+            color: bgColors[index],
+            //color: Color(0xFFD4EEF3),
             ),
            
             //time and price
@@ -379,7 +415,7 @@ class profilescreen extends StatelessWidget {
                   ),
                 ],),),
 
-          ]),),);
+          ]),),),);
                 },),),
 
         //     SizedBox(

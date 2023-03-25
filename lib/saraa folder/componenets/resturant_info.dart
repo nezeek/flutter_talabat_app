@@ -11,15 +11,17 @@ class ResturantInfo extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
+            Column(crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "2in1",
-                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                ),SizedBox(
+                   height: 10,
                 ),
                 Text(
                   "Pizza,Burgers,Italian",
-                  style: TextStyle(fontSize: 12),
+                  style: TextStyle(fontSize: 14),
                 ),
               ],
             ),
@@ -41,7 +43,7 @@ class ResturantInfo extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   RatingBar.builder(
-                    initialRating: 4,
+                    initialRating: 4.5,
                     minRating: 1,
                     direction: Axis.horizontal,
                     allowHalfRating: true,
