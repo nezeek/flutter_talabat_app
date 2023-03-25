@@ -9,7 +9,7 @@ class Datascreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 247, 244, 244),
       
       appBar: AppBar(
 backgroundColor: Colors.white,
@@ -17,7 +17,7 @@ backgroundColor: Colors.white,
 leading:  IconButton(onPressed: (){
      Navigator.push(context,
       MaterialPageRoute(builder: (context)=>HomeScreen())); },
-      icon: Icon(Icons.cancel,color: Color.fromARGB(255, 184, 177, 177),size:40 ,)),
+      icon: Icon(Icons.cancel,color: Color.fromARGB(255, 221, 218, 218),size:40 ,)),
       ),
       body: Column(
         children: [
@@ -46,7 +46,7 @@ child: Column(children: <Widget>[
 Row(children:<Widget> [
 Column(children: <Widget>[
   Text("Margherita pizza",
-    style: TextStyle(fontSize: 37,fontWeight: FontWeight.bold,
+    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
   color: Colors.black,
     ),
     ),
@@ -57,13 +57,13 @@ Column(children: <Widget>[
 ),
 Row(children: <Widget>[
   Column(children:<Widget>[
-     Text("IQD 7,000                                                    ",
-    style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400,
+     Text("IQD 7,000                                      ",
+    style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,
   color: Colors.black,
     ),
     ),
 Row(children:<Widget> [
-Text("                                                                 "),
+Text("                               "),
 SizedBox( 
 
 width: 55,
@@ -94,14 +94,26 @@ Row(
 
 ],),
 ),
+Container(margin: EdgeInsets.only(top: 10,),
+padding: EdgeInsets.only(top:10,
+left: 10,),
+height: 20,
+decoration: BoxDecoration(color: Colors.white,
+borderRadius: BorderRadius.only(topLeft: Radius.circular(5),
+topRight: Radius.circular(5),
+),
+),
+
+
+),
 
 
 Container(
 margin: EdgeInsets.only(top: 10,),
 padding: EdgeInsets.only(top:10,
 left: 10,),
-height: 100,
-decoration: BoxDecoration(color: Color.fromARGB(244, 248, 243, 248),
+height: 110,
+decoration: BoxDecoration(color:Colors.white,
 borderRadius: BorderRadius.only(topLeft: Radius.circular(5),
 topRight: Radius.circular(5),
 ),
@@ -120,7 +132,7 @@ Row(children: <Widget>[
 ),
 ],
 ),
-
+Text(""),
 SizedBox(
 height: 55,
 width: 370,
