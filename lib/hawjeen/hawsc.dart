@@ -84,7 +84,7 @@ class MySc extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
+              /* Positioned(
                 top: 215,
                 left: 17,
                 child: Container(
@@ -93,6 +93,31 @@ class MySc extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Color.fromARGB(255, 243, 243, 243),
                         borderRadius: BorderRadius.circular(15))),
+              ),*/
+              Positioned(
+                top: 215,
+                left: 17,
+                child: ElevatedButton(
+                  child: Text(
+                    " ",
+                    style: TextStyle(color: Colors.black, fontSize: 14),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => homescreen()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    minimumSize: Size(170, 120),
+                    //maximumSize: Size(150, 40),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15))),
+                    backgroundColor: Color.fromARGB(255, 243, 243, 243),
+                    padding: EdgeInsets.all(20),
+                  ),
+                ),
               ),
               Positioned(
                 top: 215,
