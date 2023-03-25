@@ -165,7 +165,7 @@ class MySc extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 295,
+                top: 303,
                 left: 210,
                 child: Container(
                   height: 20,
@@ -176,7 +176,7 @@ class MySc extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 295,
+                top: 303,
                 left: 225,
                 child: Text(
                   "New",
