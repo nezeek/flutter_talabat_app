@@ -20,7 +20,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   int myIndex = 0;
-  List<Widget> widgetList = const [
+  List<Widget> widgetList =  [
     MySc(),
     search(),
     Account(),
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(
           primarySwatch: Colors.orange,
         ),
-        home: Scaffold(
+        home: Scaffold(/*
             appBar: AppBar(
               backgroundColor: Color.fromARGB(255, 247, 223, 157),
               elevation: 0,
@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
                   )
                 ],
               ),
-            ),
+            ),*/
             body: widgetList[myIndex],
             bottomNavigationBar: BottomNavigationBar(
                 onTap: (index) {
