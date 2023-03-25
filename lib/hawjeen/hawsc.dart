@@ -273,11 +273,77 @@ class MySc extends StatelessWidget {
               Positioned(
                 top: 615,
                 left: 15,
-                child: Text(
-                  "Popular Reataurants Nearby",
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                child:Text(
+                      "Popular Reataurants Nearby",
+                      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    ),
+                  
                 ),
-              ),
+              
+             
+
+             Positioned(
+              top: 625,
+               child: Column(
+                      children: [
+             
+                        SizedBox(height: 15,),
+                         Padding(padding: EdgeInsets.symmetric(horizontal: 25),
+                         
+                ),
+             
+                  SizedBox(
+                  height: 155,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    itemCount: nearb.length,
+                    itemBuilder: (context,index){
+                      return Container(
+                          margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
+                          padding: EdgeInsets.only(top:5,bottom: 5),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                           Container(
+                          width: 80,
+                          height: 80,  
+                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
+                           border: Border.all(color: Color.fromARGB(66, 75, 73, 73)),
+                           image:DecorationImage(image:AssetImage(nearb[index].imag,),),
+                            ),),
+                              Text(nearb[index].Nav,
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
+                                      color: Colors.black87
+                                  ),),
+                            
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                               Column(
+                                children: [
+                                  Icon(Icons.access_time,size:12),
+                                  ],),
+                              Column(
+                                children: [
+                                  Text('\t${nearb[index].description}\t\t\t')
+                                  ],),
+                            ],),
+                          ],),
+                          
+                                    
+                      );
+                      
+                    }
+                  ),
+                 ),
+                      ],
+                    ),
+             ),
               /*SizedBox(
                 height: 110,
                 child: ListView.builder(
