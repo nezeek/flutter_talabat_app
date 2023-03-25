@@ -20,7 +20,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   int myIndex = 0;
-  List<Widget> widgetList =  [
+  List<Widget> widgetList = [
     MySc(),
     search(),
     Account(),
@@ -32,7 +32,8 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(
           primarySwatch: Colors.orange,
         ),
-        home: Scaffold(/*
+        home: Scaffold(
+            /*
             appBar: AppBar(
               backgroundColor: Color.fromARGB(255, 247, 223, 157),
               elevation: 0,
@@ -74,6 +75,35 @@ class _MyAppState extends State<MyApp> {
                 ])));
   }
 }
+
+/*import 'package:flutter/material.dart';
+import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
+import 'package:flutter_talabat_app/Dlkhaz/DataScreen2.dart';
+import 'package:flutter_talabat_app/Dlkhaz/account.dart';
+import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
+import 'package:flutter_talabat_app/manal/msScreen.dart';
+import 'package:flutter_talabat_app/nezik/myscreen.dart';
+import 'package:flutter_talabat_app/nezik/search.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Datascreen2(),
+    );
+  }
+}*/
 
 /*import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
