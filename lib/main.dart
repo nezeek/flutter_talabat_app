@@ -1,12 +1,16 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
 import 'package:flutter_talabat_app/Dlkhaz/account.dart';
+import 'package:flutter_talabat_app/hawjeen/adlist.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/hawjeen/mm.dart';
+import 'package:flutter_talabat_app/nezik/another.dart';
+import 'package:flutter_talabat_app/nezik/logo.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
-import 'hawjeen/hh.dart';
+import 'hawjeen/listicons.dart';
+import 'manal/msScreen.dart';
 
-void main() {
+/*void main() {
   runApp(const MyApp());
 }
 
@@ -21,19 +25,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
-      //home: ResturantInfo() ,
-      
+      home: MySc(),
     );
   }
-}
-*/
-import 'package:flutter/material.dart';
-import 'package:flutter_talabat_app/Dlkhaz/account.dart';
-import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
-import 'package:flutter_talabat_app/hawjeen/mm.dart';
-import 'package:flutter_talabat_app/manal/msScreen.dart';
-
+}*/
 void main() {
   runApp(const MyApp());
 }
@@ -48,7 +43,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   int myIndex = 0;
-  List<Widget> widgetList = const [
+  List<Widget> widgetList = [
     MySc(),
     search(),
     Account(),

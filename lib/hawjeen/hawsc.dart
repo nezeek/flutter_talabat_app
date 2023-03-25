@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_talabat_app/hawjeen/hh.dart';
+import 'package:flutter_talabat_app/hawjeen/adlist.dart';
+import 'package:flutter_talabat_app/hawjeen/listicons.dart';
+import 'package:flutter_talabat_app/hawjeen/mm.dart';
+import 'package:flutter_talabat_app/hawjeen/nearbyrest.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
 
 class MySc extends StatelessWidget {
-  const MySc({super.key});
+  MySc({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +35,13 @@ class MySc extends StatelessWidget {
           Stack(
             children: [
               Container(
-                height: 800,
+                height: 1000,
                 width: 395,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
               Image.asset("assets/1stcard.jpg"),
               Positioned(
-                bottom: 700,
+                top: 10,
                 left: 10,
                 right: 0,
                 child: Text(
@@ -47,7 +50,7 @@ class MySc extends StatelessWidget {
                 ),
               ),
               Positioned(
-                bottom: 670,
+                top: 90,
                 left: 10,
                 right: 0,
                 child: Text(
@@ -169,22 +172,125 @@ class MySc extends StatelessWidget {
                       color: Colors.black),
                 ),
               ),
-              ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: shortcutz.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 90,
-                    height: 30,
-                    color: Colors.white,
-                    child: Column(
-                      children: [Container(child: Text("CR7"))],
-                    ),
-                  );
-                },
-              )
+              Positioned(
+                top: 380,
+                child: SizedBox(
+                  height: 110,
+                  child: ListView.builder(
+                    itemCount: shortcutz.length,
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 75,
+                              width: 75,
+                              padding: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(color: Colors.white),
+                              child: Image.asset(
+                                shortcutz[index].shortcut,
+                                height: 80,
+                                width: 80,
+                              ),
+                            ),
+                            Text(
+                              shortcutz[index].name,
+                              style: TextStyle(
+                                  fontSize: 12, fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 490,
+                left: 15,
+                child: Text(
+                  "Past Orders",
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
+              ),
+              Positioned(
+                top: 490,
+                child: SizedBox(
+                  height: 150,
+                  child: ListView.builder(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: rsm.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: EdgeInsets.all(8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 120,
+                                width: 200,
+                                padding: EdgeInsets.all(8),
+                                child: Image.asset(rsm[index].food),
+                              ),
+                            ],
+                          ),
+                        );
+                      }),
+                ),
+              ),
+              Positioned(
+                top: 615,
+                left: 15,
+                child: Text(
+                  "Popular Reataurants Nearby",
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
+              ),
+              /*SizedBox(
+                height: 110,
+                child: ListView.builder(
+                  itemCount: nearb.length,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.all(8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 75,
+                            width: 75,
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(color: Colors.white),
+                            child: Image.asset(
+                              nearb[index].imag,
+                              height: 30,
+                              width: 30,
+                            ),
+                          ),
+                          Text(
+                            nearb[index].Nav,
+                            style: TextStyle(
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              ),*/
             ],
-          )
+          ),
         ],
       ),
     );
