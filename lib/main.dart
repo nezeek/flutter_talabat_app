@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
 import 'package:flutter_talabat_app/hawjeen/mm.dart';
-import 'package:flutter_talabat_app/saraa%20folder/sarascreen.dart';
+
 
 import 'Dlkhaz/account.dart';
 import 'manal/msScreen.dart';
