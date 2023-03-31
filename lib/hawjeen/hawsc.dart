@@ -362,7 +362,7 @@ class MySc extends StatelessWidget {
                                     color: Colors.black87),
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Column(
                                     children: [
@@ -371,7 +371,7 @@ class MySc extends StatelessWidget {
                                   ),
                                   Column(
                                     children: [
-                                      Text('\t${logolist[index].time}\t\t\t')
+                                      Text('\t${logolist[index].time}\t')
                                     ],
                                   ),
                                 ],
@@ -463,8 +463,8 @@ class MySc extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Container(
-                                width: 80,
-                                height: 80,
+                                width: 70,
+                                height: 70,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(
@@ -484,7 +484,7 @@ class MySc extends StatelessWidget {
                                     color: Colors.black87),
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Column(
                                     children: [
@@ -493,7 +493,7 @@ class MySc extends StatelessWidget {
                                   ),
                                   Column(
                                     children: [
-                                      Text('\t${logolist[index].time}\t\t\t')
+                                      Text('\t${logolist[index].time}\t')
                                     ],
                                   ),
                                 ],
