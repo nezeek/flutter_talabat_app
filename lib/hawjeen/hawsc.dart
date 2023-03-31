@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_talabat_app/hawjeen/pastorders.dart';
+import 'package:flutter_talabat_app/nezik/logo.dart';
 
 import '../nezik/data.dart';
 import '../nezik/myscreen.dart';
@@ -235,39 +236,51 @@ class MySc extends StatelessWidget {
                     shrinkWrap: true,
                     itemCount: shortcutz.length,
                     itemBuilder: (context, index) {
-                      return Container(
-                          margin: EdgeInsets.only(
-                              left: 7, right: 7, bottom: 2, top: 2),
-                          padding: EdgeInsets.only(top: 4, bottom: 4),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Container(
-                                width: 80,
-                                height: 80,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(
-                                      color: Color.fromARGB(66, 75, 73, 73)),
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                      shortcutz[index].shortcut,
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => logo_list(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                            width: 80,
+                            height: 90,
+                            margin: EdgeInsets.only(
+                                left: 7, right: 7, bottom: 2, top: 2),
+                            padding: EdgeInsets.only(top: 4, bottom: 4),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Container(
+                                  width: 80,
+                                  height: 80,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    // border: Border.all(
+                                    //     color: Color.fromARGB(66, 75, 73, 73)),
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                        shortcutz[index].shortcut,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              Text(
-                                shortcutz[index].name,
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12,
-                                    color: Colors.black87),
-                              ),
-                            ],
-                          ));
+                                Text(
+                                  shortcutz[index].name,
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12,
+                                      color: Colors.black87),
+                                ),
+                              ],
+                            )),
+                      );
                     }),
               ),
               SizedBox(
@@ -306,53 +319,65 @@ class MySc extends StatelessWidget {
                     shrinkWrap: true,
                     itemCount: past.length,
                     itemBuilder: (context, index) {
-                      return Container(
-                        margin: EdgeInsets.only(
-                            left: 8, right: 8, bottom: 3, top: 5),
-                        padding: EdgeInsets.only(top: 5, bottom: 5),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Container(
-                              width: 80,
-                              height: 80,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                border: Border.all(
-                                    color: Color.fromARGB(66, 75, 73, 73)),
-                                image: DecorationImage(
-                                  image: AssetImage(
-                                    past[index].restp,
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => logo_list(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          width: 80,
+                          height: 90,
+                          margin: EdgeInsets.only(
+                              left: 8, right: 8, bottom: 3, top: 5),
+                          padding: EdgeInsets.only(top: 5, bottom: 5),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Container(
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  border: Border.all(
+                                      color: Color.fromARGB(66, 75, 73, 73)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      past[index].restp,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Text(
-                              past[index].namep,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                  color: Colors.black87),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Column(
-                                  children: [
-                                    Icon(Icons.access_time, size: 12),
-                                  ],
-                                ),
-                                Column(
-                                  children: [
-                                    Text('\t${logolist[index].time}\t\t\t')
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ],
+                              Text(
+                                past[index].namep,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.black87),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Icon(Icons.access_time, size: 12),
+                                    ],
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text('\t${logolist[index].time}\t\t\t')
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     }),
@@ -364,19 +389,31 @@ class MySc extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: rsm.length,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: EdgeInsets.all(8),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 120,
-                              width: 200,
-                              padding: EdgeInsets.all(8),
-                              child: Image.asset(rsm[index].food),
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => homescreen(),
                             ),
-                          ],
+                          );
+                        },
+                        child: Container(
+                          width: 220,
+                          height: 100,
+                          padding: EdgeInsets.all(8),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 120,
+                                width: 200,
+                                padding: EdgeInsets.all(8),
+                                child: Image.asset(rsm[index].food),
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     }),
@@ -404,53 +441,65 @@ class MySc extends StatelessWidget {
                     shrinkWrap: true,
                     itemCount: logolist.length,
                     itemBuilder: (context, index) {
-                      return Container(
-                        margin: EdgeInsets.only(
-                            left: 8, right: 8, bottom: 3, top: 5),
-                        padding: EdgeInsets.only(top: 5, bottom: 5),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Container(
-                              width: 80,
-                              height: 80,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                border: Border.all(
-                                    color: Color.fromARGB(66, 75, 73, 73)),
-                                image: DecorationImage(
-                                  image: AssetImage(
-                                    logolist[index].imageurl,
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => logo_list(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          width: 80,
+                          height: 90,
+                          margin: EdgeInsets.only(
+                              left: 8, right: 8, bottom: 3, top: 5),
+                          padding: EdgeInsets.only(top: 5, bottom: 5),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Container(
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  border: Border.all(
+                                      color: Color.fromARGB(66, 75, 73, 73)),
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      logolist[index].imageurl,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Text(
-                              logolist[index].title,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                  color: Colors.black87),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Column(
-                                  children: [
-                                    Icon(Icons.access_time, size: 12),
-                                  ],
-                                ),
-                                Column(
-                                  children: [
-                                    Text('\t${logolist[index].time}\t\t\t')
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ],
+                              Text(
+                                logolist[index].title,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.black87),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Icon(Icons.access_time, size: 12),
+                                    ],
+                                  ),
+                                  Column(
+                                    children: [
+                                      Text('\t${logolist[index].time}\t\t\t')
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     }),
