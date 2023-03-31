@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
-import 'package:flutter_talabat_app/hawjeen/mm.dart';
-
+import 'package:flutter_talabat_app/hawjeen/Restfoodlist.dart';
 
 import 'Dlkhaz/account.dart';
 import 'manal/msScreen.dart';
@@ -85,6 +84,9 @@ import 'package:flutter_talabat_app/manal/msScreen.dart';
 import 'package:flutter_talabat_app/nezik/myscreen.dart';
 import 'package:flutter_talabat_app/nezik/search.dart';
 import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
+
+import 'hawjeen/home.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -96,40 +98,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Datascreen2(),
-    );
-  }
-}*/
-
-/*import 'package:flutter/material.dart';
-import 'package:flutter_talabat_app/Dlkhaz/DataScreen.dart';
-import 'package:flutter_talabat_app/Dlkhaz/DataScreen2.dart';
-import 'package:flutter_talabat_app/Dlkhaz/account.dart';
-import 'package:flutter_talabat_app/hawjeen/hawsc.dart';
-import 'package:flutter_talabat_app/manal/msScreen.dart';
-import 'package:flutter_talabat_app/nezik/myscreen.dart';
-import 'package:flutter_talabat_app/nezik/search.dart';
-import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Datascreen2(),
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: MySc());
   }
 }*/
