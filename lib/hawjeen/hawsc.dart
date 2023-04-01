@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_talabat_app/hawjeen/pastorders.dart';
 import 'package:flutter_talabat_app/nezik/logo.dart';
+import 'package:flutter_talabat_app/saraa%20folder/screens/home_screen.dart';
 
 import '../nezik/data.dart';
 import '../nezik/myscreen.dart';
@@ -324,7 +325,7 @@ class MySc extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => logo_list(),
+                              builder: (context) => HomeScreen(),
                             ),
                           );
                         },
@@ -394,7 +395,7 @@ class MySc extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => homescreen(),
+                              builder: (context) => HomeScreen(),
                             ),
                           );
                         },
@@ -446,7 +447,7 @@ class MySc extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => logo_list(),
+                              builder: (context) => HomeScreen(),
                             ),
                           );
                         },
