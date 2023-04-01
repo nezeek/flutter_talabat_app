@@ -62,8 +62,8 @@ class logo_list extends StatelessWidget {
               itemBuilder: (context,index){
                 return Container(
                   width: 140,
-                  height: 45,
-                  margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
+                  height: 30,
+                  margin: EdgeInsets.only(left:8,right: 8,bottom:2,top: 5 ),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
