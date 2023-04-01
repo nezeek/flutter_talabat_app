@@ -10,8 +10,9 @@ class ResturantAppbar extends StatelessWidget {
       expandedHeight: 130,
       pinned: true,// be pinned to the top of the screen
       backgroundColor: Colors.white,
-      elevation: 0,
-      flexibleSpace: FlexibleSpaceBar(
+      elevation: 0,//is set to 0.0, the widget's shadow is removed completely
+      flexibleSpace:// to add an image or a gradient to the background of the AppBar
+       FlexibleSpaceBar(
         background: Image.network(
           "https://images.creativemarket.com/0.1.0/ps/4758723/910/607/m2/fpnw/wm1/g4kguyfx49repfpogj8st1b7g9xg30syyjvriutskzh42yxoevzsgpne2tp9zqju-.jpg?1531658312&s=b382e41671115a33356c1d66755b7430",
           fit: BoxFit.cover,
