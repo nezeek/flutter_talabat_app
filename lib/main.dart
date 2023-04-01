@@ -32,24 +32,6 @@ class _MyAppState extends State<MyApp> {
           primarySwatch: Colors.orange,
         ),
         home: Scaffold(
-            /*
-            appBar: AppBar(
-              backgroundColor: Color.fromARGB(255, 247, 223, 157),
-              elevation: 0,
-              title: Column(
-                children: [
-                  Text(
-                    "Delivering to",
-                    style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.w300),
-                  ),
-                  Text(
-                    "Home,Duhok street",
-                    style: TextStyle(color: Colors.black),
-                  )
-                ],
-              ),
-            ),*/
             body: widgetList[myIndex],
             bottomNavigationBar: BottomNavigationBar(
                 onTap: (index) {
