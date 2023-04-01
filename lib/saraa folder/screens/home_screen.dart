@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
       controller: scrollController,
       slivers: [
         ResturantAppbar(),
-        SliverToBoxAdapter(
+        SliverToBoxAdapter(//to connect nonscroll to scroll
           child: ResturantInfo(),
         ),
         SliverPersistentHeader(

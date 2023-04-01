@@ -6,7 +6,7 @@ class ResturantAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverAppBar(
+    return SliverAppBar(//app bar that is designed to be used in a CustomScrollView.
       expandedHeight: 130,
       pinned: true,
       backgroundColor: Colors.white,
