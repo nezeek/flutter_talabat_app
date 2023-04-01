@@ -124,7 +124,7 @@ class homescreen extends StatelessWidget {
             );
            },
                child: Container(
-                  width: 110,
+                  width: 115,
                   height: 220,
                   margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
                   padding: EdgeInsets.only(top:5,bottom: 5),
@@ -234,8 +234,8 @@ class homescreen extends StatelessWidget {
               itemBuilder: (context,index){
                 return Container(
                   width: 140,
-                  height: 35,
-                  margin: EdgeInsets.only(left:8,right: 8,bottom:3,top: 5 ),
+                  height: 30,
+                  margin: EdgeInsets.only(left:8,right: 8,bottom:2,top: 5 ),
                   padding: EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
