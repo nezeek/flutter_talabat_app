@@ -8,7 +8,7 @@ class ResturantAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(//app bar that is designed to be used in a CustomScrollView.
       expandedHeight: 130,
-      pinned: true,
+      pinned: true,// be pinned to the top of the screen
       backgroundColor: Colors.white,
       elevation: 0,
       flexibleSpace: FlexibleSpaceBar(
